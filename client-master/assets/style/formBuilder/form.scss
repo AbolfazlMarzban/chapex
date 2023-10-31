@@ -1,0 +1,48 @@
+@import "./../../colors.scss";
+
+h1 {
+    font-size: 25px !important;
+    font-family: boldbakhtiari !important;
+    color: $green;
+    border-bottom: 1px solid $gray-light2 !important;
+    padding-bottom: 5px !important;
+    padding-right: 5px !important;
+}
+
+h2 { 
+    font-size: 20px !important;
+    font-family: boldbakhtiari !important;
+    color: $green;
+    // border-bottom: 1px solid $gray-light2 !important;
+    padding-bottom: 5px !important;
+    padding-right: 5px !important;
+}
+
+h3 {
+    font-size: 18px !important;
+    font-family: boldbakhtiari !important;
+    color: $green;
+    border-bottom: 1px solid $gray-light2 !important;
+    padding-bottom: 5px !important;
+    padding-right: 5px !important;
+}
+
+h4 {
+    font-size: 16px !important;
+    font-family: boldbakhtiari !important;
+    color: $green;
+    border-bottom: 1px solid $gray-light2 !important;
+    padding-bottom: 5px !important;
+    padding-right: 5px !important;
+}
+
+p {
+    font-size: 14px !important;
+    font-family: bakhtiari !important;
+    color: $black-medium !important;
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,737 @@
+@charset "UTF-8";
+
+@import "../../partials/reset";
+@import "../../partials/colors";
+@import "../../partials/inputs";
+
+body {
+  background-color: $background;
+  font-family: bakhtiari !important;
+  direction: rtl;
+  text-align: right;
+  font-size: 14px;
+} 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: $black;
+}
+
+.clr {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.effect-1 {
+  transition: all 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+  @extend .effect-1;
+
+  &:hover {
+    color: $silver;
+    text-decoration: none;
+  }
+}
+
+a:hover {
+  color: $silver;
+  text-decoration: none;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin font-weight($fweight) {
+  font-weight: $fweight;
+}
+
+@mixin line-height($lheigh) {
+  line-height: $lheigh;
+}
+
+@mixin border-radius($top, $right, $bottom, $left) {
+  border-radius: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+.first-box {
+  @include margin(214px, auto, 214px, auto);
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include padding(30px, 40px, 30px, 40px);
+  font-family: bakhtiari !important;
+  @include font-size(14px);
+  background-color: $white;
+  min-height: auto;
+
+  h1 {
+    @include font-weight(700);
+    @include font-size(16px);
+  }
+
+  label {
+    @include font-weight(700);
+    @include font-size(12px);
+    color: $silver;
+    word-spacing: -3px;
+    line-height: 20px;
+  }
+
+  input {
+    @include border-radius(20px, 20px, 20px, 20px);
+    border: none;
+    background-color: $light_silver;
+    @include font-size(12px);
+  }
+
+  p {
+    cursor: pointer;
+    text-align: right;
+    color: $black;
+    margin-bottom: 8px;
+    @include font-size(11px);
+    @include font-weight(700);
+    @include line-height(20px);
+    word-spacing: -2px;
+  }
+}
+
+.btn-green {
+  @include border-radius(20px, 20px, 20px, 20px);
+  background-color: $green;
+  border: none;
+  color: $white;
+  @include padding(8px, 40px, 8px, 40px);
+  min-width: 100%;
+  outline: none;
+
+  &:focus {
+    outline: 0 !important;
+    border: none;
+  }
+}
+
+.btn-green:focus {
+  outline: 0 !important;
+}
+
+.ftr {
+  color: $silver;
+  @include font-weight(900);
+  @include margin(0, auto, auto, auto);
+  text-align: center;
+
+  p {
+    text-align: center;
+    color: $silver;
+    @include font-weight(420);
+    @include font-size(12px);
+  }
+
+  a {
+    @include font-weight(normal);
+  }
+}
+
+.pd-0 {
+  @include padding(0px, 0px, 0px, 0px);
+}
+
+.mrg-top-5 {
+  @include margin(5px, auto, auto, auto);
+}
+
+.mrg-top-10 {
+  @include margin(10px, 0, 0, 0);
+}
+
+.mrg-top-15 {
+  @include margin(15px, auto, auto, auto);
+}
+
+.welcome-box {
+  @include margin(190px, auto, 190px, auto);
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include padding(30px, 40px, 30px, 40px);
+  font-family: bakhtiari !important;
+  @include font-size(14px);
+  background-color: $white;
+  text-align: center;
+  //height: 430px;
+  min-height: 430px;
+
+  h1 {
+    @include font-weight(700);
+    @include font-size(16px);
+  }
+
+  label {
+    @include font-weight(700);
+    @include font-size(12px);
+    color: $black;
+    word-spacing: -3px;
+    line-height: 20px;
+  }
+
+  p {
+    text-align: center;
+    color: $green;
+    @include font-size(12px);
+    @include font-weight(700);
+    @include line-height(20px);
+    word-spacing: -2px;
+  }
+}
+
+.coming-box {
+  @include margin(50px, auto, auto, auto);
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include padding(30px, 40px, 30px, 40px);
+  font-family: bakhtiari !important;
+  @include font-size(14px);
+  background-color: $white;
+  text-align: center;
+  min-height: 430px;
+
+  h1 {
+    @include font-weight(700);
+    @include font-size(16px);
+  }
+
+  label {
+    @include font-weight(700);
+    @include font-size(12px);
+    color: $black;
+    word-spacing: -3px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.profile-page-desktop {
+  background-color: $background;
+  color: $silver;
+  font-family: bakhtiari !important;
+
+  .top {
+    background-color: $white;
+    color: $black;
+    @include margin(0px, auto, auto, auto);
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include padding(15px, 40px, 10px, 40px);
+    font-family: bakhtiari !important;
+    @include font-size(14px);
+    height: 100px;
+  }
+
+  .fa {
+    color: $silver;
+  }
+
+  .mr-right {
+    @include margin(0px, 20px, 0px, 0px);
+  }
+
+  .first-top-row {
+    text-align: right;
+
+    .sh-basket {
+      background-color: $red;
+      color: $white;
+      cursor: pointer;
+      @include border-radius(20px, 20px, 20px, 20px);
+      @include padding(5px, 10px, 5px, 10px);
+      text-align: center;
+
+      .fa-shopping-cart {
+        color: $white;
+      }
+    }
+
+    input {
+      @include border-radius(20px, 20px, 20px, 20px);
+      border: none;
+      background-color: $light_silver;
+      @include font-size(12px);
+      @include padding(5px, 10px, 5px, 10px);
+      @include font-size(12px);
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      display: inline-block;
+    }
+
+    ul li input {
+      @include border-radius(20px, 20px, 20px, 20px);
+      border: none;
+      background-color: $light_silver;
+      width: 513px !important;
+      @include font-size(12px);
+      //@include padding(5px, 10px, 5px, 10px);
+      @include font-size(12px);
+    }
+
+    .navbar-logo {
+      max-width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  .second-top-row {
+    text-align: right;
+    @include font-weight(500);
+    @include font-size(12px);
+
+    .design-archive {
+      background-color: $light_silver;
+      color: $black;
+      @include border-radius(20px, 20px, 20px, 20px);
+      @include padding(5px, 5px, 5px, 5px);
+      width: 150px !important;
+      text-align: center;
+    }
+  }
+
+  .grn-number {
+    color: $green;
+    @include font-size(22px);
+  }
+
+  .second-top-row ul {
+    list-style-type: none;
+    @include padding(0, 12px, 0, 0);
+  }
+
+  .second-top-row ul li {
+    display: inline-block;
+    @include padding(3px, 11px, 0px, 10px);
+
+    svg {
+      color: $silver;
+    }
+  }
+
+  .vl-line {
+    border-left: 2px solid $silver;
+    height: 500px;
+  }
+
+  .right-menu {
+    @include border-radius(20px, 20px, 20px, 20px);
+
+    .user {
+      background-color: $white;
+      @include border-radius(20px, 20px, 20px, 20px);
+      @include padding(5px, 5px, 0px, 5px);
+      @include line-height(25px);
+
+      .fa {
+        color: $green;
+      }
+
+      label {
+        color: $black;
+        @include font-size(12px);
+        @include font-weight(800);
+      }
+
+      span {
+        @include font-size(12px);
+      }
+    }
+
+    .list-menu {
+      background-color: $white;
+      @include border-radius(20px, 20px, 20px, 20px);
+      @include padding(15px, 15px, 15px, 15px);
+      @include line-height(40px);
+      @include margin(10px, auto, auto, auto);
+
+      hr {
+        background-color: $light_silver;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(0, 0, 0, 0);
+        @include margin(15px, 0, 0, 0);
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+      }
+
+      a {
+        @include font-size(14px);
+        @include font-weight(500);
+        color: $black;
+
+        &:hover {
+          color: $silver;
+        }
+      }
+
+      .user-info {
+        background-color: $light_silver;
+        @include padding(0px, 10px, 0px, 10px);
+        @include border-radius(20px, 20px, 20px, 20px);
+      }
+
+      ul {
+        padding-left: 0px;
+
+        li {
+          cursor: pointer;
+
+          svg {
+            vertical-align: middle;
+            font-size: 12px;
+          }
+
+          .subItem_angle_left {
+            vertical-align: middle;
+            font-size: 12px;
+            float: left;
+            margin-top: 15px;
+          }
+        }
+
+        .subItem_ul_list {
+          background-color: $light_silver;
+          border-radius: 20px;
+          padding: 3px 10px;
+
+          li {
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .adver-banner {
+      @include border-radius(20px, 20px, 20px, 20px);
+      @include margin(10px, auto, auto, auto);
+      @include padding(50px, 50px, 50px, 50px);
+      background-color: $white;
+      text-align: center;
+      color: $black;
+      @include font-weight(700);
+    }
+  }
+
+  .left-menu {
+    .tbl-content {
+      background-color: $white;
+      @include padding(20px, 20px, 20px, 20px);
+      line-height: 25px;
+      @include border-radius(20px, 20px, 20px, 20px);
+    }
+
+    .personal-info {
+      color: black;
+      text-align: initial;
+      display: block;
+    }
+
+    .date {
+      @include padding(10px, 10px, 10px, 10px);
+      color: silver;
+      font-size: 12px;
+    }
+
+    label {
+      color: $black;
+      @include font-weight(500);
+    }
+
+    span {
+      color: $silver;
+      @include font-weight(500);
+    }
+
+    .fa {
+      color: $green;
+      cursor: pointer;
+    }
+
+    table {
+      min-width: 100%;
+      @include line-height(25px);
+    }
+
+    table td {
+      // @include padding(5px, 10px, 5px, 10px);
+      vertical-align: middle;
+    }
+
+    table label {
+      font-size: 13px;
+    }
+
+    table span {
+      font-size: 12px;
+    }
+
+    select {
+      width: 300px;
+      @include padding(5px, 5px, 5px, 5px);
+      @include border-radius(20px, 20px, 20px, 20px);
+      outline: none;
+      background-color: $light_silver !important;
+      color: $silver;
+      border: none;
+      @include font-size(12px);
+
+      //Hide Icon arrow //
+      // -moz-appearance:none; /* Firefox */
+      //-webkit-appearance:none; /* Safari and Chrome */
+      //appearance:none;
+
+      // background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+      background: url(../../../static/arrow-down.png) no-repeat right #ddd;
+      -webkit-appearance: none;
+      background-position-x: 10px;
+    }
+
+    .form-control:focus {
+      border-color: none;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(44, 44, 44, 0.075),
+        0 0 8px rgba(44, 44, 44, 0.075);
+      box-shadow: inset 0 1px 1px rgba(44, 44, 44, 0.075),
+        0 0 8px rgba(44, 44, 44, 0.075);
+    }
+
+    .legal {
+      @include border-radius(20px, 20px, 20px, 20px);
+      @include padding(20px, 20px, 20px, 20px);
+      background-color: $white;
+      @include margin(10px, auto, auto, auto);
+      @include font-size(13px);
+
+      p {
+        color: $black;
+        @include margin(10px, auto, auto, auto);
+      }
+
+      a {
+        font-weight: bold;
+      }
+
+      // button {
+      //   @include margin(41px, 0px, 0px, 0px);
+      //   background-color: $red;
+      //   color: $white;
+      //   border: none;
+      //   @include border-radius(20px, 20px, 20px, 20px);
+      //   @include padding(7px, 7px, 7px, 7px);
+      // }
+
+      input {
+        @include border-radius(20px, 20px, 20px, 20px);
+        border: none;
+        background-color: $light_silver;
+        @include font-size(12px);
+      }
+
+      // label {
+      //   @include padding(20px, 0, 10px, 0);
+      // }
+
+      .fa {
+        color: $white;
+      }
+
+      .legal-info {
+        color: black;
+        text-align: initial;
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+
+////// Start Mobile Style Page Profile
+.m-top {
+  background-color: $white;
+  color: $silver;
+  @include padding(10px, 10px, 10px, 10px);
+  @include font-size(12px);
+
+  hr {
+    background-color: $light_silver;
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include padding(0, 0, 0, 0);
+    @include margin(5px, 0, 5px, 0);
+  }
+
+  .m-menu {
+    .fa-align-justify {
+      cursor: pointer;
+    }
+
+    #menu-content {
+      @include padding(0, 0, 0, 0);
+      @include margin(15px, 0, 0, 0);
+
+      h2 {
+        color: $green;
+        @include font-size(15px);
+        @include font-weight(900);
+      }
+
+      label {
+        cursor: pointer;
+        @include line-height(40px);
+      }
+
+      .gift-content {
+        @include padding(0, 25px, 5px, 0);
+
+        ul li {
+          list-style-type: square;
+          cursor: pointer;
+          @include line-height(25px);
+        }
+      }
+    }
+  }
+}
+
+////// Start Mobile Style Page Profile
+
+// new style
+
+.default_Input {
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  width: 300px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.consulting-phone {
+  font-size: 12px;
+  margin-top: -10px;
+
+  span:first-child {
+    vertical-align: super;
+  }
+}
+
+.edit-font {
+  color: $green !important;
+}
+
+.arrow_right_icon_auth {
+  margin-top: 22px;
+  margin-right: 12px;
+}
+
+
+
+.profile_insert_btn {
+  @include margin(41px, 0px, 0px, 0px);
+  background-color: $red;
+  color: $white;
+  font-size: 13px;
+  border: none;
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include padding(7px, 7px, 7px, 7px);
+}
+
+.isSearch {
+  background-color: $white;
+  @include padding(10px, 10px, 10px, 10px);
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include margin(10px, 0px, 0px, 0px);
+
+  .txtSrch {
+    @include margin(0px, 0, 0, 10px);
+    @include border-radius(20px, 20px, 20px, 20px);
+
+    background-color: $light_silver;
+    @include padding(5px, 15px, 5px, 5px);
+    color: $green;
+    @include font-size(14px);
+    min-width: 100%;
+  }
+
+  ::placeholder {
+    color: $green;
+  }
+}
+
+.authlogo {
+  width: 50%;
+}
+
+.passwordlogo {
+  width: 100%;
+}
+
+.welcomlogo {
+  width: 100%;
+}
+
+.welcomebtn {
+  color: white;
+}
+
+.welcomebtntwo {
+  border: 1px solid #016670;
+  border-radius: 20px;
+  padding: 8px 100px 8px 100px;
+  min-width: 100%;
+}
+
+.vpd-input-group input:not(.vpd-is-editable) {
+  border-radius: 10px 0px 0px 10px !important;
+}
+
+.vpd-input-group label {
+  background-color: #016670 !important;
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+.additional-data {
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include padding(20px, 20px, 20px, 20px);
+  background-color: $white;
+  @include margin(10px, auto, auto, auto);
+  @include font-size(13px);
+}

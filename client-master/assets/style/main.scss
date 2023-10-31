@@ -1,0 +1,63 @@
+label,
+span,
+a,
+input,
+li,
+textarea,
+tr,
+td,
+th,
+p {
+  font-family: bakhtiari !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin font-weight($fweight) {
+  font-weight: $fweight;
+}
+
+@mixin line-height($lheigh) {
+  line-height: $lheigh;
+}
+
+@mixin border-radius($top, $right, $bottom, $left) {
+  border-radius: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
+}
+
+.text-white {
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.imageFluid {
+  width: 100%;
+  padding: 0px 18px;
+}
+
+.manage_main {
+  background-color: $background;
+}
+
+.vl-line {
+  border-left: 1px solid $silver;
+  height: 600px;
+  @include margin(0, 5px, 0, 0);
+}

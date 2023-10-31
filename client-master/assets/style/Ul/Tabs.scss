@@ -1,0 +1,40 @@
+@import "../../partials/colors";
+@import "../main.scss";
+.my-tab {
+  background-color: $white;
+  @include border-radius(20px, 20px, 20px, 20px);
+  @include padding(10px, 10px, 10px, 10px);
+  margin-top: 12px;
+  color: $silver;
+  @include font-size(13px);
+  box-shadow: 0 8px 6px -6px $silver;
+
+  .vl-line {
+    border-left: 1px solid $light_silver;
+    height: 600px;
+  }
+
+  ul {
+    list-style-type: none;
+
+    .vl-line {
+      @include padding(0px, 15px, 0px, 0px);
+    }
+  }
+
+  li {
+    display: inline-block;
+    @include padding(5px, 5px, 5px, 5px);
+    @include font-weight(700);
+    cursor: pointer;
+    transition: all 0.3s;
+    @include margin(0, 5px, 0, 0);
+    .tab_item {
+      &:hover {
+        background-color: $light_silver;
+        color: $green;
+        @include border-radius(20px, 20px, 20px, 20px);
+      }
+    }
+  }
+} //end tab

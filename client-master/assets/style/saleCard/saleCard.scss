@@ -1,0 +1,666 @@
+@import "../../main/colors";
+@import "../../main/mixin";
+@import '../../main/inputs';
+@import '../../main/widths';
+@import '../../main/mrg';
+@import '../../main/fnsize';
+@import '../../main/brdr';
+
+
+
+.my-hero-box {
+  background-color: $white;
+  @include margin(0px, auto, auto, auto);
+  @include border-radius(20px, 20px, 20px, 20px);
+  box-shadow: 1px 1px 1px $light_silver;
+  font-family: iransansBold !important;
+  @include padding(20px, 20px, 20px, 20px);
+  text-align: center;
+  min-width: 290px;
+  min-height: 380px;
+
+  .btn-ord-final {
+    font-family: iransansBold !important;
+    box-shadow: 10px 10px 50px $gr_shadow;
+    @include border-radius(20px, 20px, 20px, 20px);
+    text-align: center;
+    color: $silver;
+    @include padding(10px, 5px, 10px, 5px);
+    width: 70%;
+    @include margin(0px, auto, auto, auto);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+
+    .spn-txt {
+      margin-left: 10px;
+
+    }
+
+    .v-icon {
+      padding: 0;
+      color: $silver;
+      font-size: 22px;
+      float: none;
+    }
+
+    label {
+      color: $green;
+      font-size: 18px !important;
+    }
+
+  }
+
+  .btn-ord-final:hover {
+    background-color: $green;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .txt-box {
+    font-family: iransansBold !important;
+    text-align: center;
+    @include margin(30px, auto, auto, auto);
+
+
+
+    label {
+      color: $green;
+      font-size: 18px !important;
+    }
+
+    span {
+      color: $silver;
+      font-size: 14px !important;
+
+    }
+
+
+  }
+
+  .v-icon {
+    color: $green;
+    @include font-size(50px);
+    background-color: $white;
+    box-shadow: 10px 10px 50px $gr_shadow;
+    @include padding(30px, 30px, 30px, 30px);
+    @include border-radius(20px, 20px, 20px, 20px);
+
+
+
+  }
+
+  .btn-ord-final {
+    font-family: iransansBold !important;
+    box-shadow: 10px 10px 50px $gr_shadow;
+    @include border-radius(20px, 20px, 20px, 20px);
+    text-align: center;
+    color: $silver;
+    @include padding(10px, 5px, 10px, 5px);
+    width: 70%;
+    @include margin(0px, auto, auto, auto);
+
+    .spn-txt {
+      margin-left: 10px;
+
+    }
+
+  }
+}
+
+
+// ------------- general Styles ---------------------
+
+.my-hero-xl {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0px auto auto auto;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.my-hero-xl ul {
+  list-style-type: none;
+}
+
+.my-hero-xl ul li {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.my-hero-xl .my-hero-box {
+  background-color: #FFFFFF;
+  margin: 0px auto auto auto;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px #F2F2F2;
+  font-family: iransansBold !important;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  min-width: 290px;
+  min-height: 380px;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final .v-icon {
+  padding: 0;
+  color: #8C8C8C;
+  font-size: 22px;
+  float: none;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final label {
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final:hover {
+  background-color: #016670;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.my-hero-xl .my-hero-box .txt-box {
+  font-family: iransansBold !important;
+  text-align: center;
+  margin: 30px auto auto auto;
+}
+
+.my-hero-xl .my-hero-box .txt-box label {
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-xl .my-hero-box .txt-box span {
+  color: #8C8C8C;
+  font-size: 14px !important;
+}
+
+.my-hero-xl .my-hero-box .v-icon {
+  color: #016670;
+  font-size: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  padding: 30px 30px 30px 30px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-xl .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-lg {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0px auto auto auto;
+  justify-content: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.my-hero-lg ul {
+  list-style-type: none;
+}
+
+.my-hero-lg ul li {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.my-hero-lg .my-hero-box {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px #F2F2F2;
+  font-family: iransansBold !important;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  min-width: 240px;
+  min-height: 240px;
+}
+
+.my-hero-lg .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-lg .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-lg .my-hero-box .btn-ord-final .v-icon {
+  padding: 0;
+  color: #8C8C8C;
+  font-size: 22px;
+  float: none;
+}
+
+.my-hero-lg .my-hero-box .btn-ord-final label {
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-lg .my-hero-box .txt-box {
+  font-family: iransansBold !important;
+  text-align: center;
+  color: #016670;
+}
+
+.my-hero-lg .my-hero-box .txt-box label {
+  font-size: 18px !important;
+}
+
+.my-hero-lg .my-hero-box .txt-box span {
+  font-size: 14px !important;
+}
+
+.my-hero-lg .my-hero-box .v-icon {
+  color: #016670;
+  font-size: 50px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  padding: 30px 30px 30px 30px;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.my-hero-lg .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-lg .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-md {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0px auto auto auto;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.my-hero-md ul {
+  list-style-type: none;
+}
+
+.my-hero-md ul li {
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+}
+
+.my-hero-md .my-hero-box {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px #F2F2F2;
+  font-family: iransansBold !important;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  min-width: 190px !important;
+  min-height: 300px !important;
+}
+
+.my-hero-md .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-md .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-md .my-hero-box .btn-ord-final .v-icon {
+  padding: 0;
+  color: #8C8C8C;
+  font-size: 22px;
+  float: none;
+}
+
+.my-hero-md .my-hero-box .btn-ord-final label {
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-md .my-hero-box .txt-box {
+  font-family: iransansBold !important;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+  font-size: 18px !important;
+}
+
+.my-hero-md .my-hero-box .txt-box label {
+  font-size: 18px !important;
+}
+
+.my-hero-md .my-hero-box .txt-box span {
+  font-size: 14px !important;
+}
+
+.my-hero-md .my-hero-box .v-icon {
+  color: #016670;
+  font-size: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.my-hero-md .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-md .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-sm {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0px auto auto auto;
+  justify-content: center;
+  padding: 5px 5px 5px 5px;
+}
+
+.my-hero-sm ul {
+  list-style-type: none;
+}
+
+.my-hero-sm ul li {
+  display: inline-block;
+  padding: 3px 3px 3px 3px;
+}
+
+.my-hero-sm .my-hero-box {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px #F2F2F2;
+  font-family: iransansBold !important;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  min-width: 90px !important;
+  min-height: 90px !important;
+}
+
+.my-hero-sm .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 5px 5px 5px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-sm .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-sm .my-hero-box .btn-ord-final .v-icon {
+  padding: 0;
+  color: #8C8C8C;
+  font-size: 20px;
+  float: none;
+}
+
+.my-hero-sm .my-hero-box .btn-ord-final label {
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-sm .my-hero-box .txt-box {
+  font-family: iransansBold !important;
+  text-align: center;
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-sm .my-hero-box .txt-box label {
+  font-size: 18px !important;
+}
+
+.my-hero-sm .my-hero-box .txt-box span {
+  font-size: 14px !important;
+}
+
+.my-hero-sm .my-hero-box .v-icon {
+  color: #016670;
+  font-size: 40px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.my-hero-sm .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-sm .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-xs {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0px 20px auto auto;
+  justify-content: center;
+  padding: 5px 5px 5px 5px;
+}
+
+.my-hero-xs ul {
+  list-style-type: none;
+}
+
+.my-hero-xs ul li {
+  display: inline-block;
+  padding: 3px 3px 3px 3px;
+}
+
+.my-hero-xs .my-hero-box {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 1px 1px 1px #F2F2F2;
+  font-family: iransansBold !important;
+  padding: 5px 5px 15px 5px;
+  text-align: center;
+  min-width: 240px !important;
+  min-height: 90px !important;
+}
+
+.my-hero-xs .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 5px 5px 5px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-xs .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.my-hero-xs .my-hero-box .btn-ord-final .v-icon {
+  padding: 0;
+  color: #8C8C8C;
+  font-size: 20px;
+  float: none;
+}
+
+.my-hero-xs .my-hero-box .btn-ord-final label {
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-xs .my-hero-box .txt-box {
+  font-family: iransansBold !important;
+  text-align: center;
+  color: #016670;
+  font-size: 18px !important;
+}
+
+.my-hero-xs .my-hero-box .txt-box label {
+  font-size: 18px !important;
+}
+
+.my-hero-xs .my-hero-box .txt-box span {
+  font-size: 14px !important;
+}
+
+.my-hero-xs .my-hero-box .v-icon {
+  color: #016670;
+  font-size: 40px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.my-hero-xs .my-hero-box .btn-ord-final {
+  font-family: iransansBold !important;
+  box-shadow: 10px 10px 50px #E8F1F2;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 10px 5px 10px 5px;
+  width: 70%;
+  margin: 0px auto auto auto;
+}
+
+.my-hero-xs .my-hero-box .btn-ord-final .spn-txt {
+  margin-left: 10px;
+}
+
+.prodpic {
+  width: 100%;
+}
+
+.prodcard {
+  transition: 1s;
+  background: linear-gradient(96.41deg, rgba(242, 242, 242, 0.1) 11.6%, rgba(255, 255, 255, 0.25) 84.29%);
+  border: 3px solid #FFFFFF;
+  box-shadow: 10px 10px 30px rgba(1, 102, 112, 0.2) !important;
+  border-radius: 20px;
+
+  .v-list-item {
+    padding: 0px;
+    padding-right: 3px;
+  }
+
+  .v-avatar {
+    margin-right: 5px;
+    margin-left: 5px;
+    box-shadow: 0px 4px 4px rgba(1, 102, 112, 0.1);
+    background: #F2F2F2;
+    margin-top: -30px;
+
+    img {
+      padding: 7px;
+    }
+  }
+
+  .v-list-item__title {
+    white-space: normal;
+
+    label {
+      color: $green !important;
+      font-family: boldbakhtiari !important;
+      font-size: 14px;
+    }
+
+    span {
+      color: #8C8C8C !important;
+      font-size: 14px;
+      font-family: boldbakhtiari !important;
+    }
+  }
+
+
+
+}
+
+.prodcard:hover {
+  transform: translate(0px, -10px);
+  transition: 1s;
+}
+
+.prodbox-icon {
+  color: white;
+  background: rgba(1, 102, 112, 0.5);
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 3px;
+}

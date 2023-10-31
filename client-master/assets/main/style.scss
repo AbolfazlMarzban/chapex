@@ -1,0 +1,4792 @@
+@charset "UTF-8";
+@import "./colors";
+@import "./mixin";
+@import './inputs';
+@import './widths';
+@import './mrg';
+@import './fnsize';
+@import './brdr';
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.admin-login {
+    background-color: $white;
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include padding(40px, 25px, 30px, 25px);
+    height: auto;
+    @include line-height(50px);
+    @include margin(10px, 0, 0, 0);
+
+    .main-con {
+        text-align: right;
+        @include line-height(30px);
+
+        .small {
+            color: $silver;
+            @include font-size(14px);
+        }
+
+        input {
+            height: 35px;
+        }
+
+        .ftr {
+            max-width: 85%;
+        }
+
+
+        .sub-footer {
+            .my-line-silver {
+                color: $silver;
+                background-color: $silver;
+                height: 5px;
+            }
+        }
+
+        .btn-greeen {
+            background-color: $green;
+            color: $white;
+            height: 35px;
+            line-height: 40px;
+            cursor: pointer;
+
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            @include font-size(12px);
+        }
+
+
+    }
+
+
+
+    .slogan-1 {
+        @include font-size(40px);
+        color: $green;
+        font-family: bakhtiari !important;
+    }
+
+    .slogan-2 {
+        @include font-size(40px);
+        color: $red;
+        font-family: bakhtiari !important;
+    }
+}
+
+
+hr {
+    border: 0.5px solid $light_silver;
+    color: $light_silver !important;
+    background-color: $light_silver;
+}
+
+.clr {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.right-content {
+    direction: rtl;
+    text-align: right;
+    font-family: bakhtiari !important;
+
+    .logo {
+        background-color: white;
+        @include padding(15px, 7px, 6px, 7px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include margin(0, 0, 0, 0);
+        text-align: center;
+    }
+
+    .user-img {
+        background-color: $white;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(7px, 7px, 7px, 7px);
+        min-height: 100px;
+        @include line-height(20px);
+        @include margin(10px, 0, 0, 0);
+
+        img {
+            background-color: $white;
+            width: 70px;
+            height: 70px;
+            @include padding(3px, 3px, 3px, 3px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            float: right;
+            border: solid 1px $light_silver;
+            box-shadow: 2px 2px 2px $silver;
+            @include margin(10px, 40px, 0, 0);
+        }
+
+        .user-info {
+            float: right;
+            @include margin(10px, 0, 0, 0);
+
+            label {
+                @include margin(50px, 5px, 0, 0);
+                @include font-size(16px);
+                color: $black !important;
+                font-weight: normal !important;
+            }
+
+            span {
+                color: $silver !important;
+                @include font-size(14px);
+                @include margin(0, 5px, 0, 0);
+            }
+
+            .edt {
+                font-size: 13px;
+                color: #016670 !important;
+                margin-right: 0px !important;
+            }
+        }
+
+        .icons {
+            color: $green;
+            @include font-size(12px);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            @include margin(0, 5px, 0, 0);
+            background-color: $light_silver;
+            @include padding(3px, 3px, 3px, 3px);
+        }
+    }
+
+    //end user img
+    //start right green menu
+    .right-menu-green {
+        background-color: $green;
+        min-height: 300px;
+        @include margin(10px, 0, 0, 0);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(15px, 15px, 15px, 15px);
+        @include font-size(16px);
+
+        a {
+            color: $white;
+            text-decoration: none;
+            @include line-height(30px);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            display: block;
+        }
+
+        .list-icons {
+            color: $white;
+            @include font-size(13px);
+            @include padding(0, 0, 0, 5px);
+        }
+
+        .sub-content {
+            @include padding(5px, 17px, 10px, 0px);
+            line-height: 30px;
+
+            label {
+                @include font-weight(normal);
+                @include font-size(14px);
+                color: $white;
+                cursor: pointer;
+                @include line-height(25px);
+            }
+
+            .active-link {
+                background-color: $white;
+                @include border-radius(20px, 20px, 20px, 20px);
+                color: $green;
+                @include padding(2px, 5px, 2px, 5px);
+                @include font-size(14px);
+                font-weight: bold;
+            }
+        }
+    }
+
+    //end right green menu
+}
+
+//end right content
+//start left content
+//end tab
+.left-content {
+    direction: rtl;
+    text-align: right;
+    font-family: bakhtiari !important;
+
+
+
+
+
+    .attention {
+        color: $red;
+        font-weight: bold;
+        @include font-size(16px);
+    }
+
+
+    .isSearch {
+        background-color: $white;
+        @include padding(10px, 10px, 10px, 10px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include margin(10px, 0px, 0px, 0px);
+
+        .txtSrch {
+            @include margin(0px, 0, 0, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            padding-top: 25px !important;
+            @include padding(5px, 15px, 5px, 5px);
+            color: $green;
+            @include font-size(14px);
+            min-width: 100%;
+        }
+
+        ::placeholder {
+            color: $green;
+        }
+
+
+    }
+
+    .test {
+        background-color: $white;
+        border-radius: 20px;
+        padding: 20px;
+        border: solid 1px #CCC;
+        margin-top: 10px;
+    }
+
+
+    .my-new-tab {
+        @include font-size(16px);
+        font-weight: bolder;
+    }
+
+    //start tab 
+    .my-tab {
+        background-color: #FFFFFF;
+        @include margin(10px, 0px, 0px, 0px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(20px, 20px, 20px, 20px);
+        color: #8C8C8C;
+        font-size: 14px;
+        box-shadow: 0 8px 6px -6px #8c8c8c;
+        font-family: bakhtiari !important;
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 5px 5px 5px 5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 0 10px 0 0;
+        }
+
+        .vl-line {
+            @include padding(0, 15px, 0, 0);
+            border-left: 1px solid #F2F2F2;
+            height: 600px;
+        }
+
+        .vl-line-silver {
+            @include padding(0, 15px, 0, 0);
+            border-left: 1px solid $silver;
+            height: 600px;
+        }
+
+        .options {
+            color: $green;
+
+            .mdi {
+                @include padding(5px, 5px, 5px, 5px);
+                background-color: $light_silver;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                color: $green;
+                @include font-size(14px);
+            }
+
+            span {
+                @include padding(0, 0, 0, 5px);
+            }
+        }
+
+        .title-name {
+            color: $green;
+            font-family: bakhtiari !important;
+
+            .mdi-account-plus {
+                color: $green;
+                @include font-size(16px);
+                padding-left: 5px !important;
+            }
+
+            label {
+                color: $green;
+                @include margin(0, 3px, 0, 0);
+                font-family: bakhtiari !important;
+                @include font-size(16px);
+            }
+
+            span {
+                color: $silver;
+                @include font-size(14px);
+                @include margin(0, 5px, 0, 0);
+                font-family: bakhtiari !important;
+            }
+        }
+    }
+
+    .icons {
+        color: $green;
+        @include margin(0, 0, 0, 10px);
+        @include font-size(16px);
+    }
+
+    .root {
+        min-width: 100%;
+
+        .breadcrumb {
+            color: $green;
+            @include font-size(12px);
+            background-color: $light_silver;
+            @include font-size(16px !important);
+            @include line-height(20px);
+            @include padding(0, 0, 0, 0);
+
+            .mdi-home {
+                @include font-size(25px !important);
+            }
+
+
+            .icons {
+                color: $green;
+            }
+
+            span {
+                @include margin(0px, -5px, 0px, 0px);
+                font-weight: 900;
+
+            }
+        }
+
+        .srch-icons {
+
+            ul {
+                list-style-type: none
+            }
+
+            li {
+                display: inline-block;
+
+                .icons {
+                    color: $green;
+                    @include padding(5px, 0, 0, 0);
+                    @include font-size(25px);
+                }
+            }
+
+        }
+    }
+
+    //end root
+    .my-tab-test {
+        background-color: #FFFFFF;
+        @include margin(10px, 0px, 0px, 0px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        color: #8C8C8C;
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            @include padding(5px, 5px, 5px, 5px);
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 0 10px 0 0;
+            font-size: 16px;
+        }
+
+        .vl-line {
+            @include padding(0, 15px, 0, 0);
+            border-left: 1px solid #F2F2F2;
+            height: 600px;
+        }
+    }
+
+
+
+    .tstt {
+        padding: 5px 5px 5px 5px;
+        background-color: #f2f2f2;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        color: #016670;
+        margin-right: 5px;
+        font-size: 14px !important;
+    }
+
+    .do-scroll {
+        overflow-x: scroll !important;
+    }
+
+
+
+    //start main content
+    .main-content {
+        background-color: $white;
+        @include margin(10px, 0px, 0px, 0px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(15px, 15px, 15px, 15px);
+        color: $silver;
+        @include font-size(13px !important);
+        font-family: bakhtiari !important;
+
+        .white-boxx {
+            @include margin(0px, auto, auto, auto);
+            background-color: #FFF;
+            @include padding(10px, 10px, 10px, 10px);
+            border-radius: 20px;
+            color: #016670;
+            box-shadow: 10px 10px 50px #e8f1f2;
+            font-family: boldbakhtiari !important;
+            @include font-size(14px !important);
+            cursor: pointer;
+            line-height: 20px;
+
+        }
+
+
+        .green-boxx {
+            @include margin(0px, auto, auto, auto);
+            background-color: $green;
+            @include padding(10px, 10px, 10px, 10px);
+            border-radius: 20px;
+            color: $white;
+            box-shadow: 10px 10px 50px #e8f1f2;
+            font-family: bakhtiari !important;
+            @include font-size(14px !important);
+            cursor: pointer;
+            line-height: 20px;
+
+        }
+
+        .close-style {
+
+            color: $silver;
+            @include font-size(14px);
+            @include padding(2px, 2px, 2px, 2px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+
+        .btn-action {
+            @include margin(10px, 0px, 0px, 0px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(5px, 15px, 5px, 5px);
+            color: $white;
+            @include font-size(16px !important);
+            background-color: $green;
+            cursor: pointer;
+
+        }
+
+        .modal-btn-group {
+            background-color: transparent;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+
+
+
+        // img {
+        //     //@include border-radius(20px, 20px, 20px, 20px);
+        // }
+
+
+        .my-box-silver {
+            background-color: $light_silver;
+            @include padding(10px, 10px, 10px, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            width: 70px;
+            height: 70px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $green;
+
+            .v-icon {
+                color: $green !important;
+                @include font-size(17px);
+            }
+        }
+
+        .green-line-tab {
+            color: $green;
+            background-color: $green;
+            @include padding(3px, 0px, 0px, 3px);
+            @include border-radius(20px, 20px, 20px, 20px);
+        }
+
+
+        .amounts {
+            @include font-size(15px);
+        }
+
+
+        .close {
+            color: $red;
+            @include font-weight(600);
+            cursor: pointer;
+            @include font-size(16px);
+        }
+
+        thead {
+            th:hover {
+                background-color: $green !important;
+                color: $white;
+            }
+        }
+
+        label {
+            @include font-size(16px !important);
+        }
+
+        .table-cover {
+            border: solid 1px $light_silver;
+            border-radius: 20px;
+            @include padding(10px, 10px, 10px, 10px);
+
+            input[type="text"],
+            textarea {
+                height: 30px;
+                width: 100px;
+            }
+
+            select {
+                border-radius: 20px;
+                outline: none;
+                height: 30px;
+                @include padding(0px, 5px, 0px, 0px);
+                color: $black;
+                border: none;
+                font-size: 12px;
+                background: url(/img/arrow-down.png) no-repeat right #ddd;
+                background-position-x: 10px;
+            }
+        }
+
+        textarea {
+            min-width: 100% !important;
+        }
+
+        .subject {
+            @include font-size(16px !important);
+            color: $green;
+        }
+
+        .green-line-1 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 90px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 12px;
+        }
+
+        .green-line-2 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 185px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 138px;
+        }
+
+        .green-line-3 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 70px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 11px;
+        }
+
+        .green-line-4 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 75px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 110px;
+        }
+
+        .green-line-5 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 117px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 13px;
+        }
+
+        .green-line-6 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 150px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 170px;
+        }
+
+        .green-line-7 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 145px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 13px;
+        }
+
+        .green-line-8 {
+            @extend .green-line-6;
+            width: 80px;
+            margin-right: 345px;
+        }
+
+        .green-line-9 {
+            @extend .green-line-6;
+            width: 75px;
+            margin-right: 135px;
+        }
+
+        .green-line-10 {
+            @extend .green-line-9;
+            width: 65px;
+            margin-right: 163px;
+        }
+
+        .green-line-11 {
+            @extend .green-line-10;
+            width: 60px;
+            margin-right: 255px;
+        }
+
+        .green-line-12 {
+            @extend .green-line-11;
+            width: 75px;
+            margin-right: 345px;
+        }
+
+        .green-line-13 {
+            @extend .green-line-11;
+            width: 103px;
+            margin-right: 452px;
+        }
+
+        .v-select label {
+            font-size: 13px;
+        }
+
+        hr {
+            border: 0.5px solid $light_silver;
+            color: $light_silver !important;
+            background-color: $light_silver;
+        }
+
+        select {
+            padding: 7px 7px 7px 7px;
+            margin: 5px 0 0 0;
+            border-radius: 20px;
+            outline: none;
+            background-color: #F2F2F2 !important;
+            color: #8C8C8C;
+            border: none;
+            font-size: 12px;
+            background: url(/img/arrow-down.png) no-repeat right #ddd;
+            background-position-x: 10px;
+        }
+
+        .chart-btn {
+            background-color: #016670 !important;
+            color: $white;
+            border-radius: 20px;
+
+        }
+
+        .list-btn {
+            background-color: #016670 !important;
+            color: $white;
+            border-radius: 20px;
+            font-family: bakhtiari !important;
+            text-align: left;
+            float: left;
+        }
+
+        .add-feature-1 {
+            background-color: $green;
+            text-align: center;
+            color: #FFF;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(7px, 7px, 7px, 7px);
+            width: 220px;
+        }
+
+        .add-feature-2 {
+            background-color: $green;
+            text-align: center;
+            color: #FFF;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(7px, 7px, 7px, 7px);
+            width: 290px;
+        }
+
+        .subject {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .black-rec {
+            width: 150px;
+            height: 15px;
+            background-color: #000;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include margin(5px, 0px, 0px, 0px);
+        }
+
+        .edit {
+            color: $green;
+            @include font-weight(600);
+            cursor: pointer;
+            @include font-size(16px);
+        }
+
+        table {
+
+            overflow-x: scroll !important;
+            color: $silver;
+            @include font-size(16px);
+            color: $black;
+            min-width: 100%;
+
+            input[type="text"] {
+                background-color: $light_silver;
+                border-radius: 20px;
+                min-width: 100% !important;
+            }
+
+            th {
+                color: $silver;
+                border: none;
+                padding: 10px;
+            }
+
+            tr {
+                line-height: 30px;
+            }
+
+            tr:hover {
+                background-color: $light_silver;
+            }
+
+            td {
+                border-bottom: solid 1px $light_silver;
+                line-height: 50px;
+            }
+        }
+
+        .form-control {
+            border-radius: 20px 20px 20px 20px;
+            border: none;
+            background-color: #F2F2F2;
+            font-size: 15px !important;
+            padding: 5px 10px 5px 10px;
+            font-size: 12px;
+            margin: 5px 0 0 0;
+            min-width: 100%;
+        }
+    }
+
+    //end main content
+}
+
+//end left content
+//end left content
+//end left content
+//end left content
+//end left content
+
+
+
+
+
+
+
+
+
+
+
+//Start Mobile Style
+
+.mlogo {
+    min-width: 100%;
+    background-color: $white;
+    border-radius: 20px;
+    @include padding(15px, 15px, 8px, 15px);
+
+
+}
+
+.mhr {
+    background-color: $silver !important;
+    color: $silver !important;
+    min-width: 95%;
+    text-align: center;
+    @include margin(0px, auto, auto, auto);
+    @include border-radius(20px, 20px, 20px, 20px);
+
+
+}
+
+//End Mobile Style
+
+
+
+
+
+
+//Start User Interface Styleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+.utop-part {
+    background-color: $white;
+    @include margin(0px, auto, auto, auto);
+    @include line-height(50px);
+    font-family: bakhtiari !important;
+    background-image: url(/img/index.jpg);
+    background-position: center;
+    font-family: bakhtiari !important;
+    @include padding(10px, 20px, 0px, 20px);
+    height: 250px;
+
+    //start mobile-menu
+    .mobile-menu {
+        color: $silver;
+        line-height: 0px;
+        @include font-size(16px);
+        font-family: bakhtiari !important;
+        background-color: $white;
+
+
+
+        .mrg-minus-top-15 {
+            margin-top: -15px;
+        }
+
+
+
+        .logo {
+            color: $green;
+            font-family: bakhtiari !important;
+            font-size: 20px !important;
+
+        }
+
+        .mdi-account {
+            color: $silver !important;
+        }
+
+        .hr-line {
+            min-width: 100%;
+            color: $mid-silver;
+            background-color: $mid-silver;
+            height: 0.5px;
+        }
+
+        .m-srch {
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: right;
+            height: 30px;
+            background-color: $light_silver;
+            @include padding(10px, 15px, 5px, 0px);
+            color: $silver;
+            background-color: $white;
+            border: solid 1px $light-silver;
+            @include font-size(14px);
+            min-width: 100%;
+
+        }
+
+
+        .mobile-content {
+            background-color: $white;
+            line-height: 30px;
+            position: relative;
+            z-index: 9999;
+            @include padding(0px, 15px, 5x, 20px);
+
+            .v-icon {
+                @include font-size(20px);
+            }
+
+
+
+            ul {
+                list-style-type: none;
+            }
+
+            ul li {
+                display: inline-block;
+
+
+            }
+
+
+
+        }
+    }
+
+    //end mobile-menu
+
+
+    .mdi-account {
+        color: $green !important;
+    }
+
+    .mdi-cart {
+        color: $white !important;
+    }
+
+    .utxtSrch {
+        @include border-radius(20px, 20px, 20px, 20px);
+        text-align: right !important;
+        float: right;
+        height: 30px;
+        background-color: $light_silver;
+        @include padding(0px, 15px, 0px, 0px);
+        color: $silver !important;
+        @include font-size(14px);
+        min-width: 100%;
+    }
+
+    ::placeholder {
+        color: $silver;
+
+    }
+
+    .uinput {
+        color: $silver;
+    }
+
+    .ufactors {
+        @include border-radius(20px, 20px, 20px, 20px);
+        height: 30px;
+        background-color: $red;
+        @include padding(0px, 15px, 0px, 15px);
+        color: $white;
+        @include font-size(14px);
+        @include margin(7px, 0, 0, 0px);
+        float: left;
+        text-align: left;
+
+        .us1 {
+            float: right;
+            margin-top: -10px;
+        }
+
+
+        .us2 {
+            float: left;
+            margin-top: -10px;
+        }
+    }
+
+
+
+    .umenu {
+        margin-top: -10px;
+        color: $silver !important;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(0px, 0px, 0px, 26px);
+                text-align: center;
+                color: $black !important;
+
+
+            }
+        }
+
+
+    }
+
+
+    .uconsult {
+        @include margin(0px, 0px, 0px, 0px);
+        @include font-size(16px);
+
+        a {
+            color: $red;
+            text-decoration: none;
+            @include font-size(26px);
+
+        }
+
+    }
+
+
+}
+
+
+.new-main {
+    @include margin(10px, auto, auto, auto);
+    font-family: boldbakhtiari !important;
+    @include padding(10px, 10px, 10px, 10px);
+
+
+    .main-print-products {
+
+        @include padding(10px, 10px, 10px, 10px);
+
+        .mdi-arrow-down-thick {
+            color: $green;
+
+        }
+
+        .lbl-title {
+            color: $green;
+            font-family: bakhtiari !important;
+            @include font-size(20px);
+        }
+    }
+
+
+    .root {
+        color: $silver;
+        font-family: bakhtiari !important;
+        @include font-size(14px);
+        @include padding(5px, 5px, 5px, 5px);
+
+        .v-icon {
+            @include font-size(14px);
+        }
+
+    }
+
+    // p {
+    //     font-family: bakhtiari !important;
+    //     @include font-size(16px);
+
+    // }
+
+    .btn-whitee {
+        background: $white;
+        border-radius: 20px;
+        @include padding(5px, 10px, 3px, 10px);
+        font-family: boldbakhtiari !important;
+        @include margin(5px, auto, auto, auto);
+    }
+
+    .btn-sample-works {
+        box-shadow: 10px 10px 50px #e8f1f2;
+        background: $white;
+        min-width: 100%;
+        color: $green;
+        text-align: center;
+        border-radius: 20px;
+        @include padding(10px, 10px, 8px, 10px);
+        font-family: boldbakhtiari !important;
+        @include margin(5px, auto, auto, auto);
+    }
+
+
+    .number-three {
+        width: 55%;
+
+        @include margin(10px, auto, auto, auto);
+    }
+
+
+    .main-faq {
+        //box-shadow: 0 0 50px #01667029;
+        border: solid 2px $mid-silver;
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        width: 85%;
+        @include padding(20px, 20px, 10px, 20px);
+
+        .title {
+            font-size: 16px !important;
+            color: $green;
+            font-family: boldbakhtiari !important;
+        }
+
+        span {
+            font-family: boldbakhtiari !important;
+            color: $green;
+            cursor: pointer;
+        }
+
+        .mdi-account-question-outline {
+            font-family: boldbakhtiari !important;
+            color: $black;
+            float: right;
+            @include padding(2px, 0px, 0px, 5px);
+
+        }
+
+        p {
+            text-align: justify;
+            @include font-size(16px);
+            color: $black;
+            @include margin(10px, auto, auto, auto);
+            @include line-height(30px);
+            font-family: bakhtiari !important;
+        }
+
+
+    }
+
+
+    .main-white-box {
+        background-color: $white;
+        @include padding(20px, 35px, 30px, 35px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        box-shadow: 10px 10px 50px #e8f1f2;
+
+        line-height: 30px;
+        color: $black;
+        @include font-size(16px);
+
+        .title {
+            font-family: bakhtiari !important;
+            color: $green;
+            @include font-size(20px);
+        }
+    }
+
+    .white-box {
+        background-color: $white;
+        @include padding(30px, 35px, 30px, 35px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        box-shadow: 10px 10px 50px #e8f1f2;
+        text-align: center;
+        line-height: 30px;
+        color: $black;
+        @include font-size(16px);
+
+        .lbl-title {
+            font-family: bakhtiari !important;
+            color: $green;
+            font-size: 20px !important;
+
+
+
+        }
+
+        p {
+            @include margin(15px, auto, auto, auto);
+            direction: rtl;
+            text-align: justify;
+
+        }
+
+
+        .v-icon {
+            color: $green;
+        }
+
+
+    }
+
+
+
+    .faq-box {
+
+        @include padding(20px, 20px, 20px, 20px);
+        @include margin(0px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        border: solid 2px $mid-silver;
+        line-height: 30px;
+        color: $black;
+
+        p {
+            @include padding(20px, 15px, 20px, 15px);
+            line-height: 30px;
+            text-align: justify;
+        }
+
+
+
+        @include font-size(16px);
+
+        .mdi-arrow-down-thick {
+            color: $green;
+            @include font-size(18px);
+        }
+
+        .header {
+            background: $white;
+            @include padding(15px, 10px, 10px, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+
+        }
+
+        .title {
+            color: $green;
+            font-family: bakhtiari;
+        }
+
+        .sub-title {
+            color: $green;
+            @include font-size(18px);
+        }
+    }
+
+
+    .graphic-sample-box {
+        background-color: $white;
+        @include padding(20px, 30px, 20px, 30px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        box-shadow: 10px 10px 50px #e8f1f2;
+        line-height: 30px;
+        color: $black;
+        @include font-size(16px);
+
+        label {
+            color: $green;
+            font-family: bakhtiari !important;
+            @include font-size(20px);
+
+        }
+
+        span {
+            color: $green;
+            font-family: boldbakhtiari;
+
+        }
+    }
+
+
+
+
+    .status {
+        direction: rtl;
+        text-align: center;
+        min-width: 100%;
+
+        .title {
+            direction: rtl;
+            color: $green;
+            font-family: bakhtiari !important;
+            font-size: 20px !important;
+        }
+
+        .hide-content {
+            border: solid 1px $mid_silver;
+            @include padding(50px, 10px, 50px, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+            min-width: 100%;
+        }
+
+    }
+
+    .cur-pointer {
+        cursor: pointer;
+    }
+
+    .my-line-silver {
+        height: 0.5px;
+        color: $silver;
+        background-color: $silver;
+    }
+
+    .my-line-mid-silver {
+        height: 0.5px;
+        color: $mid-silver;
+        background-color: $mid-silver;
+        @include margin(3px, auto, auto, auto);
+    }
+
+
+    .main-graph-design-box {
+        box-shadow: 0 0 50px #01667029;
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        width: 85%;
+        justify-items: center;
+        justify-content: center;
+        background-color: $white;
+
+        font-family: boldbakhtiari !important;
+        @include padding(10px, 10px, 10px, 10px);
+
+
+
+
+        .white-box {
+            background-color: $white;
+            @include padding(30px, 10px, 30px, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            color: $green;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+
+        }
+
+        .white-box:hover {
+            color: $silver;
+            cursor: pointer;
+
+            span {
+                color: $silver;
+            }
+
+            .v-icon {
+                color: $silver;
+            }
+        }
+
+
+
+
+
+        .sp-green {
+            color: $green;
+            @include font-size(50px);
+            font-family: bakhtiari;
+
+        }
+
+        .sp-red {
+            color: $red;
+            @include font-size(50px);
+            font-family: bakhtiari;
+        }
+
+        .title {
+            color: $green;
+            font-family: boldbakhtiari !important;
+        }
+
+        .sp-small {
+            color: $silver;
+        }
+
+
+    }
+
+
+    .video-block {
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        width: 85%;
+        background-color: $white;
+        @include padding(20px, 30px, 30px, 30px);
+        @include font-size(16px);
+
+        video {
+            min-width: 100%;
+            @include border-radius(20px, 20px, 20px, 20px);
+        }
+
+        .title {
+            font-family: bakhtiari !important;
+            @include font-size(20px);
+        }
+
+        p {
+            text-align: justify;
+            line-height: 30px;
+        }
+    }
+
+
+
+
+
+    .main-graph-services {
+
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        width: 85%;
+        justify-items: center;
+        justify-content: center;
+        background-color: transparent;
+
+        font-family: boldbakhtiari !important;
+        @include padding(10px, 10px, 10px, 10px);
+
+        p {
+            @include line-height(30px);
+            text-align: justify;
+        }
+
+
+
+
+        .white-box {
+            background-color: $white;
+            @include padding(30px, 10px, 30px, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            color: $green;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+
+        }
+
+        .white-box:hover {
+            color: $silver;
+            cursor: pointer;
+
+            span {
+                color: $silver;
+            }
+
+            .v-icon {
+                color: $silver;
+            }
+        }
+
+
+
+
+
+        .sp-green {
+            color: $green;
+            @include font-size(50px);
+            font-family: bakhtiari;
+
+        }
+
+        .sp-red {
+            color: $red;
+            @include font-size(50px);
+            font-family: bakhtiari;
+        }
+
+        .title {
+            color: $green;
+            font-family: boldbakhtiari;
+        }
+
+        .sp-small {
+            color: $silver;
+        }
+
+
+    }
+
+
+
+
+
+
+
+    .main-adv-box {
+        box-shadow: 0 0 50px #01667029;
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        width: 85%;
+        justify-items: center;
+        justify-content: center;
+        font-size: 16px !important;
+        background-color: $white;
+
+
+        p {
+            text-align: justify;
+            @include padding(5px, 30px, 10px, 30px);
+            @include line-height(30px);
+            font-family: bakhtiari !important;
+        }
+
+
+        .sp-green {
+            color: $green;
+            @include font-size(50px);
+            font-family: bakhtiari;
+        }
+
+        .sp-red {
+            color: $red;
+            @include font-size(50px);
+            font-family: bakhtiari;
+        }
+
+        .title {
+            color: $green;
+            font-family: boldbakhtiari !important;
+        }
+
+        .sp-small {
+            color: $silver;
+        }
+
+
+    }
+
+
+    .why {
+        text-align: center;
+        justify-content: center;
+        @include margin(-89px, auto, auto, auto);
+        font-size: 16px !important;
+
+
+        //main boxes XL
+        .main-boxes-xl {
+            @include padding(10px, 10px, 10px, 10px);
+            @include margin(0, auto, auto, auto);
+            text-align: center;
+            justify-content: center;
+
+            .mdi-note-text-outline {
+                color: $black;
+                @include font-size(120px);
+            }
+
+            .w-75-p {
+                width: 75%;
+            }
+
+            ul {
+                list-style-type: none;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    @include padding(30px, 90px, 30px, 90px);
+                    @include font-size(16px);
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                }
+            }
+
+        }
+
+        //main boxes LG
+        .main-boxes-lg {
+            @include padding(10px, 10px, 10px, 10px);
+            @include margin(0, auto, auto, auto);
+            text-align: center;
+            justify-content: center;
+
+            .mdi-note-text-outline {
+                color: $black;
+                @include font-size(100px);
+
+            }
+
+            .w-90-p {
+                width: 90%;
+            }
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    text-align: center;
+                    @include padding(30px, 50px, 30px, 50px);
+                    @include font-size(16px);
+
+                    img {
+                        width: 170px;
+                        height: 170px;
+                    }
+
+                }
+            }
+
+        }
+
+
+
+
+        p {
+            text-align: justify;
+            @include line-height(30px);
+            @include font-size(16px);
+        }
+
+
+
+
+
+        .sp-green {
+            color: $green;
+            @include font-size(50px);
+            font-family: bakhtiari;
+        }
+
+        .sp-red {
+            color: $red;
+            @include font-size(50px);
+            font-family: bakhtiari;
+        }
+
+        .sp-small {
+            color: $silver;
+            @include font-size(14px);
+        }
+
+        .title {
+            color: $green;
+            font-family: iransansBold !important;
+            @include font-size(16px);
+        }
+
+    }
+
+    .my-line-silver {
+        height: 0.5px;
+        color: $silver;
+        background-color: $silver;
+    }
+
+
+    .ubox-final {
+        text-align: left;
+        background-color: $white;
+        @include border-radius(20px, 20px, 20px, 20px);
+        min-width: 100%;
+        @include margin(0px, auto, auto, auto);
+        color: $green;
+
+        @include padding(30px, 20px, 10px, 30px);
+        box-shadow: 1px 1px 1px $light_silver;
+        text-align: left;
+        font-family: iransansBold !important;
+
+
+        .ico-box {
+            background-color: $white;
+            box-shadow: 10px 10px 50px $gr_shadow;
+            @include padding(5px, 5px, 5px, 5px);
+            text-align: center;
+            @include border-radius(20px, 20px, 20px, 20px);
+            width: 110px;
+            height: 110px;
+            float: left;
+
+
+            .v-icon {
+                color: $green;
+                @include font-size(50px);
+                margin-top: 25px;
+            }
+        }
+
+        .txt-box {
+            font-family: iransansBold !important;
+            text-align: center;
+            font-size: 18px !important;
+
+            label {
+                font-size: 18px !important;
+            }
+
+            span {
+                font-size: 14px !important;
+            }
+
+        }
+
+        .btn-ord-final {
+            font-family: iransansBold !important;
+            box-shadow: 10px 10px 50px $gr_shadow;
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+            color: $silver;
+            @include padding(10px, 5px, 10px, 5px);
+            width: 70%;
+            @include margin(0px, auto, auto, auto);
+
+            .spn-txt {
+                margin-left: 10px;
+
+            }
+
+        }
+    }
+
+
+
+
+
+
+
+    //// Start All Resolution For Part one Website
+
+    //start may hero xl
+    .my-hero-xl {
+        background-color: transparent;
+        text-align: center;
+        border-radius: 20px;
+        @include margin(0px, auto, auto, auto);
+        justify-content: center;
+        @include padding(20px, 20px, 20px, 20px);
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(10px, 10px, 10px, 10px);
+
+            }
+        }
+
+        .my-hero-box {
+            background-color: $white;
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            box-shadow: 1px 1px 1px $light_silver;
+            font-family: iransansBold !important;
+            @include padding(20px, 20px, 20px, 20px);
+            text-align: center;
+            min-width: 290px;
+            min-height: 380px;
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+                transition: all 0.5s ease-in-out;
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                -ms-transition: all 0.5s ease-in-out;
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+                .v-icon {
+                    padding: 0;
+                    color: $silver;
+                    font-size: 22px;
+                    float: none;
+                }
+
+                label {
+                    color: $green;
+                    font-size: 18px !important;
+                }
+
+            }
+
+            .btn-ord-final:hover {
+                background-color: $green;
+                color: $white;
+                cursor: pointer;
+            }
+
+            .txt-box {
+                font-family: iransansBold !important;
+                text-align: center;
+                @include margin(30px, auto, auto, auto);
+
+
+
+                label {
+                    color: $green;
+                    font-size: 18px !important;
+                }
+
+                span {
+                    color: $silver;
+                    font-size: 14px !important;
+
+                }
+
+
+            }
+
+            .v-icon {
+                color: $green;
+                @include font-size(50px);
+                background-color: $white;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include padding(30px, 30px, 30px, 30px);
+                @include border-radius(20px, 20px, 20px, 20px);
+
+
+
+            }
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+            }
+        }
+
+    }
+
+
+    //start my hero lg
+    .my-hero-lg {
+        background-color: transparent;
+        text-align: center;
+
+        border-radius: 20px;
+        @include margin(0px, auto, auto, auto);
+        justify-content: center;
+        @include padding(20px, 20px, 20px, 20px);
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(10px, 10px, 10px, 10px);
+
+            }
+        }
+
+        .my-hero-box {
+            background-color: $white;
+            @include border-radius(20px, 20px, 20px, 20px);
+            box-shadow: 1px 1px 1px $light_silver;
+            font-family: iransansBold !important;
+            @include padding(20px, 20px, 20px, 20px);
+            text-align: center;
+            min-width: 240px;
+            min-height: 240px;
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+                .v-icon {
+                    padding: 0;
+                    color: $silver;
+                    font-size: 22px;
+                    float: none;
+                }
+
+                label {
+                    color: $green;
+                    font-size: 18px !important;
+                }
+
+            }
+
+            .txt-box {
+                font-family: iransansBold !important;
+                text-align: center;
+                color: $green;
+
+                label {
+                    font-size: 18px !important;
+                }
+
+                span {
+                    font-size: 14px !important;
+                }
+
+            }
+
+            .v-icon {
+                color: $green;
+                @include font-size(50px);
+                background-color: $white;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include padding(30px, 30px, 30px, 30px);
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+
+
+            }
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+            }
+        }
+
+    }
+
+    //start my hero md
+    .my-hero-md {
+        background-color: transparent;
+        text-align: center;
+
+        border-radius: 20px;
+        @include margin(0px, auto, auto, auto);
+        justify-content: center;
+        @include padding(10px, 10px, 10px, 10px);
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(5px, 5px, 5px, 5px);
+
+            }
+        }
+
+        .my-hero-box {
+            background-color: $white;
+            @include border-radius(20px, 20px, 20px, 20px);
+            box-shadow: 1px 1px 1px $light_silver;
+            font-family: iransansBold !important;
+            @include padding(10px, 10px, 10px, 10px);
+            text-align: center;
+            min-width: 190px !important;
+            min-height: 300px !important;
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+                .v-icon {
+                    padding: 0;
+                    color: $silver;
+                    font-size: 22px;
+                    float: none;
+                }
+
+                label {
+                    color: $green;
+                    font-size: 18px !important;
+                }
+
+            }
+
+            .txt-box {
+                font-family: iransansBold !important;
+                text-align: center;
+                @include margin(30px, 0px, 0px, 0px);
+                font-size: 18px !important;
+
+
+                label {
+                    font-size: 18px !important;
+                }
+
+                span {
+                    font-size: 14px !important;
+                }
+            }
+
+
+
+            .v-icon {
+                color: $green;
+                @include font-size(30px);
+                background-color: $white;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include padding(10px, 10px, 10px, 10px);
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+
+
+            }
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+            }
+        }
+
+    }
+
+    //start my hero sm
+    .my-hero-sm {
+        background-color: transparent;
+        text-align: center;
+        border-radius: 20px;
+        @include margin(0px, auto, auto, auto);
+        justify-content: center;
+        @include padding(5px, 5px, 5px, 5px);
+
+
+
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(3px, 3px, 3px, 3px);
+
+            }
+        }
+
+
+
+
+        .my-hero-box {
+            background-color: $white;
+            @include border-radius(20px, 20px, 20px, 20px);
+            box-shadow: 1px 1px 1px $light_silver;
+            font-family: iransansBold !important;
+            @include padding(5px, 5px, 5px, 5px);
+            text-align: center;
+            min-width: 90px !important;
+            min-height: 90px !important;
+
+
+
+
+
+
+
+
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(5px, 5px, 5px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+                .v-icon {
+                    padding: 0;
+                    color: $silver;
+                    font-size: 20px;
+                    float: none;
+                }
+
+                label {
+                    color: $green;
+                    font-size: 18px !important;
+                }
+
+            }
+
+            .txt-box {
+                font-family: iransansBold !important;
+                text-align: center;
+                color: $green;
+                font-size: 18px !important;
+
+                label {
+                    font-size: 18px !important;
+                }
+
+                span {
+                    font-size: 14px !important;
+                }
+
+            }
+
+            .v-icon {
+                color: $green;
+                @include font-size(40px);
+                background-color: $white;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include padding(5px, 5px, 5px, 5px);
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+
+
+            }
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+            }
+        }
+
+    }
+
+
+    //start my hero xs
+    .my-hero-xs {
+        background-color: transparent;
+        text-align: center;
+        border-radius: 20px;
+        @include margin(0px, 20px, auto, auto);
+        justify-content: center;
+        @include padding(5px, 5px, 5px, 5px);
+
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(3px, 3px, 3px, 3px);
+
+            }
+        }
+
+
+        .my-hero-box {
+            background-color: $white;
+            //background-color: $red;
+            @include border-radius(20px, 20px, 20px, 20px);
+            box-shadow: 1px 1px 1px $light_silver;
+            font-family: iransansBold !important;
+            @include padding(5px, 5px, 15px, 5px);
+            text-align: center;
+            min-width: 240px !important;
+            min-height: 90px !important;
+
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(5px, 5px, 5px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+                .v-icon {
+                    padding: 0;
+                    color: $silver;
+                    font-size: 20px;
+                    float: none;
+                }
+
+                label {
+                    color: $green;
+                    font-size: 18px !important;
+                }
+
+            }
+
+            .txt-box {
+                font-family: iransansBold !important;
+                text-align: center;
+                color: $green;
+                font-size: 18px !important;
+
+                label {
+                    font-size: 18px !important;
+                }
+
+                span {
+                    font-size: 14px !important;
+                }
+            }
+
+            .v-icon {
+                color: $green;
+                @include font-size(40px);
+                background-color: $white;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include padding(5px, 5px, 5px, 5px);
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+            }
+
+            .btn-ord-final {
+                font-family: iransansBold !important;
+                box-shadow: 10px 10px 50px $gr_shadow;
+                @include border-radius(20px, 20px, 20px, 20px);
+                text-align: center;
+                color: $silver;
+                @include padding(10px, 5px, 10px, 5px);
+                width: 70%;
+                @include margin(0px, auto, auto, auto);
+
+                .spn-txt {
+                    margin-left: 10px;
+
+                }
+
+            }
+        }
+
+    }
+
+
+
+    //// End All Resolution For Part one Website
+
+
+    .logo-txt {
+        font-family: iransansBold !important;
+        @include margin(0px, auto, auto, auto);
+        color: $green;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        span {
+            @include margin(0px, auto, auto, auto);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .slogan-1 {
+            @include font-size(100px);
+            color: $green;
+            font-family: bakhtiari !important;
+        }
+
+        .slogan-2 {
+            @include font-size(100px);
+            color: $red;
+            font-family: bakhtiari !important;
+        }
+
+        .slogan-3 {
+            color: $green;
+            font-family: iransansBold !important;
+
+        }
+
+        .slogan-4 {
+            color: $silver;
+            font-family: iransansBold !important;
+        }
+    }
+
+
+    tbody {
+        font-family: bakhtiari !important;
+
+        tr {
+
+            td {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .brdr-solid-silver {
+        border: solid 1px silver;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(15px, 15px, 15px, 15px);
+
+    }
+
+    .vl-line {
+        @include padding(0, 15px, 0, 0);
+        border-left: 1px solid #F2F2F2;
+        height: 600px;
+    }
+
+    .vl-line-green {
+        @include padding(0, 15px, 0, 0);
+        border-left: 2px solid $green;
+        height: 20px;
+    }
+
+    .my-white-box {
+        @include margin(0px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(0, 15px, 0, 0);
+        @include font-size(16px);
+        background-color: $white;
+        font-family: bakhtiari !important;
+        min-width: 100%;
+        color: $black;
+
+        label {
+            color: $black;
+        }
+    }
+
+
+    .my-cart-box {
+        min-width: 100%;
+        @include padding(20px, 20px, 0px, 20px);
+        font-family: bakhtiari !important;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include font-size(16px);
+        background: $white;
+        color: $black !important;
+        box-shadow: 0 0 30px $mid_silver;
+        line-height: 30px;
+
+        .subject {
+            color: $black;
+            @include font-size(20px);
+            font-family: bakhtiari !important;
+        }
+
+        .title {
+            color: $green;
+            font-family: bakhtiari !important;
+        }
+
+        label {
+            color: $black;
+        }
+
+        .final-price {
+            font-family: iransansBold !important;
+        }
+
+
+
+        span {
+            color: $silver;
+
+        }
+
+        p {
+            color: $silver;
+            @include font-size(16px);
+            text-align: justify;
+
+        }
+
+    }
+
+
+
+    .my-cart-box-slide {
+        min-width: 100%;
+        @include padding(20px, 20px, 5px, 20px);
+        font-family: bakhtiari !important;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include font-size(16px);
+        background: $white;
+        color: $black !important;
+        box-shadow: 0 0 30px $mid_silver;
+        line-height: 15px;
+
+        .subject {
+            color: $black;
+            @include font-size(20px);
+            font-family: bakhtiari !important;
+        }
+
+        .title {
+            color: $green;
+            font-family: bakhtiari !important;
+        }
+
+        label {
+            color: $black;
+        }
+
+        .final-price {
+            font-family: iransansBold !important;
+        }
+
+
+
+        span {
+            color: $silver;
+
+        }
+
+        p {
+            color: $silver;
+            @include font-size(16px);
+            text-align: justify;
+
+        }
+
+    }
+
+
+
+    .my-light-silver-box {
+        min-width: 100%;
+        @include padding(10px, 10px, 5px, 10px);
+        font-family: bakhtiari !important;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include font-size(16px);
+        background: $light_silver;
+
+        color: $green;
+
+        label {
+            color: $green;
+        }
+
+        p {
+            color: $silver;
+            text-align: justify;
+        }
+
+        .lbl-price {
+            color: $black;
+            font-family: iransansBold !important;
+
+        }
+
+        .price {
+            color: $green;
+            @include font-size(16px);
+            font-family: iransansBold !important;
+        }
+
+        .mdi-beaker-remove-outline {
+            color: $red;
+        }
+
+    }
+
+    .my-box-transparent {
+        background-color: transparent;
+        border: solid 1px $silver;
+        font-family: bakhtiari !important;
+        text-align: center;
+        @include padding(10px, 10px, 10px, 10px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include font-size(16px);
+        color: $silver;
+
+    }
+
+
+
+    .btn-order-2 {
+        background: $green;
+        text-align: center;
+        border: solid 1px $silver;
+        color: $white;
+        font-family: iransansBold !important;
+        @include padding(10px, 10px, 10px, 10px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        min-width: 150px;
+        line-height: 30px;
+        @include font-size(16px);
+    }
+
+    .btn-return {
+        background: transparent;
+        text-align: center;
+        border: solid 1px $mid_silver;
+        color: $silver;
+        font-family: iransansBold !important;
+        @include padding(10px, 10px, 10px, 10px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        min-width: 150px;
+        line-height: 30px;
+        @include font-size(16px);
+
+    }
+
+    .btn-transparent-gr {
+        text-align: center;
+        @include border-radius(20px, 20px, 20px, 20px);
+        width: 200px;
+        @include padding(10px, 10px, 10px, 10px);
+        @include font-size(16px);
+        border: solid 1px $green;
+        color: $green;
+    }
+
+    .bx-custom-1 {
+        @include margin(0px, auto, auto, auto);
+        background-color: $white;
+        @include padding(5px, 40px, 10px, 40px);
+        @include font-size(16px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        font-family: bakhtiari !important;
+        color: $black;
+
+    }
+
+    .bx-custom-2 {
+        @include margin(10px, auto, auto, auto);
+        background-color: $white;
+        @include padding(0.5px, 50px, 5px, 10px);
+        @include font-size(16px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        font-family: bakhtiari !important;
+        color: $black !important;
+        height: 55px;
+
+
+
+        label {
+            font-family: bakhtiari !important;
+            color: $black !important;
+        }
+
+
+        span {
+            @include font-size(22px);
+
+        }
+
+    }
+
+    .black-color {
+        color: $black !important;
+        font-family: bakhtiari !important;
+        font-size: 16px !important;
+    }
+
+    .bx-empty {
+        background-color: transparent;
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include line-height(40px);
+        @include padding(10px, 10px, 10px, 10px);
+        @include font-size(16px);
+        border: solid 1px $mid_silver;
+        text-align: center;
+
+
+        .white-box {
+            background-color: $white;
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+            box-shadow: 0 0 30px $mid_silver;
+            @include padding(10px, 10px, 10px, 10px);
+            @include margin(10px, auto, auto, auto);
+            min-height: 300px;
+
+
+            .v-icon {
+                font-size: 90px;
+                color: $green;
+
+            }
+        }
+
+
+    }
+
+
+    .btn-order {
+        background-color: #016670;
+        @include padding(10px, 10px, 10px, 10px);
+        color: #FFFFFF !important;
+        @include font-size(16px);
+        text-align: center;
+        cursor: pointer;
+        @include border-radius(20px, 20px, 20px, 20px);
+        font-family: iransansBold !important;
+
+    }
+
+    .uploads {
+        color: $silver;
+        min-width: 100%;
+        text-align: center;
+
+
+        .upl-box {
+            border: solid 1px #E6E5E5;
+            font-family: bakhtiari !important;
+            min-height: 250px;
+            text-align: center;
+            @include padding(50px, 50px, 50px, 50px);
+            min-height: 320px !important;
+            @include border-radius(20px, 20px, 20px, 20px);
+
+
+
+            .mdi-cloud-upload-outline {
+                @include font-size(100px);
+            }
+        }
+    }
+
+    input[type="text"] {
+        background-color: $light_silver;
+        @include border-radius(20px, 20px, 20px, 20px);
+        min-width: 100% !important;
+        @include padding(5px, 15px, 5px, 5px);
+    }
+
+    textarea {
+        background-color: $light_silver;
+        @include border-radius(20px, 20px, 20px, 20px);
+        min-width: 100% !important;
+        @include padding(5px, 15px, 5px, 5px);
+    }
+
+
+
+    select {
+        border-radius: 20px;
+        outline: none;
+        height: 30px;
+        @include padding(5px, 15px, 5px, 5px);
+        color: $black;
+        border: none;
+        @include font-size(16px);
+        background: url(/img/arrow-down.png) no-repeat right $light_silver;
+        background-position-x: 10px;
+        min-width: 100%;
+    }
+
+    .order-levels {
+        @include margin(0px, auto, auto, auto);
+        text-align: center;
+        font-family: bakhtiari !important;
+        @include font-size(16px);
+
+
+        .lbl-titlee {
+            font-family: iransansBold !important;
+        }
+
+        label {
+            @include font-size(16px);
+        }
+
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(10px, 25px, 0px, 0px);
+                @include font-size(16px);
+
+                .mdi-arrow-left {
+                    @include font-size(16px);
+                }
+            }
+        }
+
+    }
+
+    .order-box {
+        text-align: right;
+        min-width: 100%;
+        font-family: bakhtiari;
+        color: $black;
+
+        .btn-order {
+            background-color: #016670;
+            @include padding(10px, 10px, 10px, 10px);
+            color: #FFFFFF !important;
+            @include font-size(16px);
+            text-align: center;
+            cursor: pointer;
+            @include border-radius(20px, 20px, 20px, 20px);
+            font-family: iransansBold;
+        }
+
+
+
+
+        label {
+            font-family: bakhtiari;
+            color: $green;
+            text-align: right;
+            @include font-size(20px);
+        }
+
+        .obox {
+            background-color: $white;
+            @include padding(25px, 50px, 10px, 50px);
+            @include margin(10px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            font-family: bakhtiari !important;
+            direction: rtl;
+            min-width: 100%;
+
+            ul {
+                list-style-type: square;
+                @include padding(10px, 15px, 10px, 50px);
+
+            }
+
+
+
+
+
+        }
+    }
+
+    .red-color {
+        color: $red;
+    }
+
+    .recommend-product {
+
+
+        .rec-pro-box {
+            @include margin(10px, auto, auto, auto);
+            @include padding(20px, 20px, 20px, 20px);
+            background-color: $white;
+            @include border-radius(20px, 20px, 20px, 20px);
+
+            img {
+                @include padding(0px, 0px, 10px, 0px);
+            }
+
+            label {
+                font-family: iransansBold !important;
+
+
+
+            }
+
+            .btn-show-page {
+                background-color: $light_silver;
+                font-family: bakhtiari !important;
+                color: $silver;
+                @include padding(2px, 10px, 2px, 10px);
+                @include border-radius(20px, 20px, 20px, 20px);
+                @include margin(10px, auto, auto, auto);
+
+
+            }
+
+        }
+    }
+
+
+    hr {
+        border: 0.5px solid $light_silver;
+        color: $light_silver;
+        background-color: $light_silver;
+    }
+
+    .user-img-receive {
+        @include margin(10px, auto, auto, auto);
+        text-align: center;
+        background-color: transparent;
+        color: $black;
+        @include padding(20px, 50px, 20px, 50px);
+        font-family: bakhtiari !important;
+    }
+
+    .common-query {
+        @include margin(10px, auto, auto, auto);
+        background-color: transparent;
+        color: $black;
+        @include padding(20px, 50px, 20px, 50px);
+        font-family: bakhtiari !important;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .introduce-product {
+        @include margin(10px, auto, auto, auto);
+        background-color: transparent;
+        color: $black;
+        @include padding(20px, 50px, 20px, 50px);
+        font-family: bakhtiari !important;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .utab-video {
+        background-color: transparent;
+        color: $black;
+        @include padding(20px, 50px, 20px, 50px);
+        font-family: bakhtiari !important;
+    }
+
+    .utab-template {
+        background-color: transparent;
+        color: $black;
+        @include padding(20px, 50px, 20px, 50px);
+        font-family: bakhtiari !important;
+
+        p {
+            text-align: justify;
+            @include line-height(30px);
+        }
+
+        .items-box {
+            background-color: $white;
+            color: $black;
+            @include padding(20px, 30px, 2px, 30px);
+            @include margin(20px, auto, auto, auto);
+            text-align: center;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include line-height(30px);
+            width: 250px;
+
+            img {
+                padding-top: 5px;
+                padding-bottom: 10px;
+                border-radius: 0;
+            }
+
+            .mdi-adobe {
+                @include font-size(30px);
+                font-size: 40px !important;
+                @include margin(10px, auto, auto, auto);
+            }
+
+            .lbl-item-name {
+                color: $black;
+                @include font-size(16px);
+
+            }
+
+            .lbl-template {
+                color: $silver;
+                @include font-size(16px);
+            }
+        }
+    }
+
+    .my-line {
+        border: 0.5px solid $light_silver;
+        color: $light_silver;
+        background-color: $light_silver;
+        @include margin(10px, auto, auto, auto);
+
+    }
+
+    .new-answer {
+        border: solid 1px $green;
+        @include padding(0px, 10px, 0px, 10px);
+        background-color: $white;
+        @include border-radius(20px, 20px, 20px, 20px);
+        text-align: center;
+        @include margin(10px, auto, auto, auto);
+        width: 200px;
+        color: $green;
+
+
+    }
+
+    .gr-color {
+        color: $green !important;
+    }
+
+    .bl-color {
+        color: $black !important;
+    }
+
+    .btn-yes {
+        @include padding(10px, 10px, 10px, 10px);
+        background-color: $green_y;
+        color: $white;
+    }
+
+    .lbl-bold {
+        font-family: iransansBold !important;
+
+    }
+
+
+    .btn-no {
+        @include padding(10px, 10px, 10px, 10px);
+        background-color: $mid_silver;
+        color: $white;
+
+    }
+
+
+    .uprogress {
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(0px, 5px, 0px, 0px);
+            }
+        }
+
+        .uprogress-empty {
+            background-color: $silver;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(3px, 30px, 3px, 30px);
+
+        }
+
+        .uprogress-fill {
+            background-color: $light_green;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(3px, 30px, 3px, 30px);
+        }
+    }
+
+
+
+    .mother {
+        background-color: $mid_silver;
+        @include padding(20px, 20px, 20px, 20px);
+        @include border-radius(20px, 20px, 20px, 20px);
+    }
+
+    .buyer {
+        background-color: $light_silver;
+        color: $silver;
+        @include padding(2px, 20px, 2px, 20px);
+        @include border-radius(20px, 20px, 20px, 20px);
+
+    }
+
+
+
+
+
+    .usubject-block {
+        background-color: $white;
+        @include padding(20px, 20px, 15px, 20px);
+        @include border-radius(10px, 10px, 10px, 10px);
+        @include font-size(16px);
+        min-width: 100%;
+
+        .lbl-tlt {
+            font-size: 16px;
+            color: $green;
+            font-family: iransansBold !important;
+            float: right;
+        }
+
+        .mdi-format-line-spacing {
+            background-color: $green;
+            color: $white;
+            @include padding(5px, 5px, 5px, 5px);
+            @include border-radius(5px, 5px, 5px, 5px);
+        }
+
+        span {
+            @include font-size(16px);
+            color: $silver;
+            font-family: bakhtiari;
+        }
+
+        .spn-prascend {
+            color: $black;
+            @include font-size(30px !important);
+
+
+        }
+
+    }
+
+
+
+
+    .utab-opinion {
+        @include margin(0px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include line-height(40px);
+        @include padding(10px, 25px, 10px, 25px);
+        @include font-size(16px);
+        min-width: 100%;
+        background-color: $white;
+        font-family: bakhtiari !important;
+
+        .mdi-plus-circle {
+            color: $green_y;
+        }
+
+        .mdi-minus-circle {
+            color: $light_red;
+        }
+
+        .recommend-to-buy {
+            background-color: $green_y;
+            color: $white;
+            @include padding(2px, 20px, 2px, 20px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+
+        }
+
+        .pagination {
+            text-align: center;
+            @include margin(0px, auto, auto, auto);
+            direction: ltr;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    color: $black;
+                    @include padding(0px, 20px, 0px, 0px);
+                }
+            }
+
+            .active {
+                background-color: $mid_silver;
+                @include padding(0px, 10px, 0px, 10px);
+                @include border-radius(20px, 20px, 20px, 20px);
+
+            }
+        }
+
+        .box-border {
+            border: solid 1px $mid_silver;
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include line-height(40px);
+            @include padding(10px, 40px, 10px, 40px);
+            @include font-size(16px);
+            min-width: 100%;
+            background-color: $white;
+            font-family: bakhtiari !important;
+        }
+
+        hr {
+            border: 0.5px solid $silver;
+            padding: 1px;
+            color: $silver;
+            background-color: $silver;
+            @include margin(10px, auto, auto, auto);
+        }
+
+
+
+
+    }
+
+
+
+    .ubtn-tab {
+        color: $black;
+        font-family: bakhtiari !important;
+        @include margin(0, auto, auto, auto);
+        padding: 5px;
+
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(5px, 30px, 5px, 30px);
+                cursor: pointer;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            .active {
+                background-color: $mid_silver;
+            }
+        }
+    }
+
+
+
+    hr {
+        border: 0.5px solid $light_silver;
+        color: $light_silver;
+        background-color: $light_silver;
+        @include margin(10px, auto, auto, auto);
+    }
+
+    .vl-line {
+        @include padding(0, 15px, 0, 0);
+        border-left: 1px solid #F2F2F2;
+        height: 35px;
+
+    }
+
+    .fn-sidebar {
+
+        @include margin(10px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(20px, 20px, 20px, 20px);
+        @include font-size(16px);
+
+        background-color: $white;
+
+        .title {
+            color: $green;
+            text-align: center;
+
+            font-family: bakhtiari !important;
+        }
+
+        ul {
+            list-style-type: square;
+            color: $green;
+            @include padding(20px, 20px, 20px, 20px);
+            font-family: bakhtiari !important;
+
+            li {
+                color: $black;
+                @include line-height(30px);
+            }
+
+        }
+
+
+
+        .calculate {
+            //    border: solid 1px $light_silver;
+            //  @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(5px, 5px, 5px, 5px);
+            @include margin(10px, auto, auto, auto);
+            font-family: bakhtiari !important;
+            text-align: center;
+
+            .sp-green {
+                color: $green;
+                font-family: iransansBold !important;
+                @include font-size(16px);
+            }
+        }
+    }
+
+
+
+    .subject-block {
+        background-color: #F2F2F2;
+        @include padding(20px, 0px, 20px, 20px);
+        @include border-radius(10px, 10px, 0px, 0px);
+        min-width: 100%;
+        border-bottom: 1px solid rgba(140, 140, 140, 0.5);
+
+        h1 {
+            @include font-size(25px);
+            color: $green;
+            font-family: heavybakhtiari !important;
+            float: right;
+            letter-spacing: -0.2px;
+        }
+
+        .mdi-format-line-spacing {
+            background-color: $green;
+            color: $white;
+            @include padding(5px, 5px, 5px, 5px);
+            @include border-radius(5px, 5px, 5px, 5px);
+        }
+
+        span {
+            @include font-size(14px);
+            color: $silver;
+            font-family: bakhtiari !important;
+        }
+
+        .star {
+            color: $white;
+            @include font-size(12px);
+            font-size: 10px !important;
+
+        }
+
+    }
+
+
+    // img {
+    //     @include border-radius(20px, 20px, 20px, 20px);
+
+    // }
+
+    .do-center {
+        @include margin(0, auto, auto, auto);
+
+    }
+
+    .ubox {
+        text-align: center;
+        background-color: $white;
+        @include border-radius(20px, 20px, 20px, 20px);
+        min-width: 100%;
+        @include margin(0px, auto, auto, auto);
+        color: $green;
+        @include line-height(40px);
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        box-shadow: 1px 1px 1px $light_silver;
+
+        hr {
+
+            border: solid 0.5px $light_silver;
+            @include border-radius(20px, 20px, 20px, 20px);
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+
+
+        }
+
+        span {
+            color: $silver;
+
+        }
+
+
+        .mdi-account-box {
+            font-size: 50px !important;
+            color: $green !important;
+            @include margin(30px, auto, auto, auto);
+        }
+
+
+        .ubasket-order {
+            color: $white !important;
+            display: block;
+            background-color: $white;
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(90px, 90px, 0px, 0px);
+            width: 85%;
+            text-align: center;
+
+            .mdi-cart {
+                color: $white !important;
+            }
+
+            .sporder {
+                font-family: bakhtiari !important;
+                color: $white;
+
+            }
+
+        }
+    }
+
+
+
+    .ubox:hover {
+        background-color: $green;
+        color: $white;
+        cursor: pointer;
+
+        span {
+            color: $white;
+
+        }
+
+        .ubasket-order {
+            display: block;
+        }
+
+        .mdi-account-box {
+            color: $white !important;
+        }
+
+        .mdi-cart {
+            color: $red !important;
+        }
+
+        .sporder {
+
+            color: $red;
+
+        }
+
+    }
+
+
+
+
+
+
+    .ubingo {
+        font-family: bakhtiari !important;
+
+        .ublack-box {
+            background-color: $white;
+            border-radius: 20px;
+            padding: 10px;
+            position: relative;
+            box-shadow: 0 0 24px rgb(0 0 0 / 10%);
+            height: 170px;
+            transition: all 0.3s ease-in-out;
+            color: $green;
+
+            .character {
+                background: url(/img/character.jpg) no-repeat right #ddd;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 85px;
+                border-radius: 20px;
+                width: 100px;
+                position: absolute;
+                top: -30px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .lbl {
+                position: absolute;
+                top: 75px;
+                right: 60px;
+                font-size: 20px;
+
+            }
+
+
+            .spn-order {
+                font-family: bakhtiari !important;
+                position: absolute;
+                color: $red;
+                top: 120px;
+                right: 45px;
+                transition: all 0.3s ease-in-out;
+
+                .mdi-cart {
+                    color: $red;
+                }
+            }
+        }
+
+
+    }
+
+    .ubingo:hover {
+        cursor: pointer;
+
+        .ublack-box {
+            height: 180px;
+
+
+        }
+
+        .character {
+            transform: rotate(30deg);
+        }
+
+        .spn-order {
+            background-color: $red;
+            color: $white;
+            border-radius: 20px;
+            padding: 2px 10px 2px 10px;
+
+            .mdi-cart {
+                color: $white;
+            }
+        }
+    }
+
+
+
+
+    .bx-style-2 {
+        background-color: #ECECEC;
+        border: solid 1px #FFF;
+        @include margin(0px, auto, auto, auto);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include line-height(40px);
+        @include padding(35px, 35px, 35px, 35px);
+        text-align: center;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-box-shadow: 0 0 30px #d6d6d6;
+        box-shadow: 0 0 30px #d6d6d6;
+        color: $green;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        .bx-style-2-con {
+            background-color: $white;
+            text-align: center;
+            @include padding(10px, 35px, 20px, 35px);
+            box-shadow: 0 0 10px #fff;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include font-size(16px);
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+
+
+            .v-icon {
+                color: $green;
+                font-size: 50px;
+            }
+        }
+    }
+
+    .bx-style-2:hover {
+
+        -webkit-box-shadow: 0 0 50px #fff;
+        box-shadow: 0 0 50px #fff;
+
+        .bx-style-2-con {
+            -webkit-box-shadow: 0 0 30px #d6d6d6;
+            box-shadow: 0 0 30px #d6d6d6;
+        }
+
+
+    }
+
+
+    .final-content {
+
+        @include line-height(20px);
+        @include font-size(16px);
+
+        .lbl-1 {
+            color: $black;
+            font-family: bakhtiari !important;
+
+        }
+
+
+
+        .title {
+            color: $black;
+            font-family: iransansBold !important;
+            font-size: 16px !important;
+
+        }
+
+        p {
+            color: $silver;
+            // font-family: bakhtiari !important;
+        }
+
+        .vl-line-silver {
+            @include padding(0, 10px, 0, 0px);
+            border-left: 2px solid $silver;
+            height: 30px;
+        }
+
+        del {
+            color: $silver;
+            padding: 0;
+            margin: 0;
+            height: 0.5px;
+        }
+
+        .offerus {
+            background: $red;
+            color: $white;
+            @include padding(5px, 10px, 5px, 10px);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            @include margin(0px, auto, auto, auto);
+            width: 110px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .keraft {
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(20px, 0px, 20px, 0px);
+            @include font-size(16px);
+            border: solid 1px $mid_silver;
+
+            text-align: center;
+            background-color: transparent;
+            cursor: not-allowed;
+
+
+            p {
+                @include line-height(40px);
+                color: $silver !important;
+                @include margin(2px, auto, auto, auto);
+            }
+        }
+
+        .fn-box-1 {
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(5px, 0px, 1px, 0px);
+            @include font-size(16px);
+            border: 0;
+            text-align: center;
+            background-color: $white;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-box-shadow: 0 0 30px #d6d6d6;
+            box-shadow: 0 0 30px #d6d6d6;
+
+            p {
+                @include line-height(40px);
+                color: $black !important;
+                @include margin(2px, auto, auto, auto);
+            }
+        }
+
+        .fn-box-1:hover {
+            border: solid 1px $light_silver;
+
+        }
+
+
+
+
+        .fn-box-2 {
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(20px, 20px, 15px, 20px);
+            @include font-size(16px);
+
+            text-align: center;
+            background-color: $white;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-box-shadow: 0 0 30px #d6d6d6;
+            box-shadow: 0 0 30px #d6d6d6;
+
+            p {
+                @include line-height(40px);
+                color: $black !important;
+                @include margin(2px, auto, auto, auto);
+            }
+        }
+
+
+
+        .fn-box-trans {
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(20px, 20px, 15px, 20px);
+            @include font-size(16px);
+            border: solid 1px #E6E5E5;
+            text-align: center;
+            background-color: transparent;
+
+
+            cursor: not-allowed;
+
+            p {
+                @include line-height(40px);
+                color: $silver !important;
+                @include margin(2px, auto, auto, auto);
+            }
+        }
+
+
+
+
+
+        .fn-box-green {
+
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(20px, 20px, 10px, 20px);
+            @include font-size(16px);
+            border: solid 2px $green;
+            text-align: center;
+            background-color: $white;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -webkit-box-shadow: 0 0 30px #d6d6d6;
+            box-shadow: 0 0 30px #d6d6d6;
+
+            p {
+                @include line-height(40px);
+                color: $black !important;
+                @include margin(2px, auto, auto, auto);
+            }
+
+        }
+
+        .fn-box-white {
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(30px, 30px, 30px, 30px);
+            @include font-size(16px);
+            background-color: $white;
+            -webkit-box-shadow: 0 0 30px #d6d6d6;
+            box-shadow: 0 0 30px #d6d6d6;
+            // font-family: bakhtiari !important;
+
+            p {
+                @include line-height(30px);
+            }
+
+
+
+        }
+
+        .fn-box-final-price-1 {
+            @include border-radius(20px, 20px, 20px, 20px);
+            border: solid 1px $light_silver;
+            @include padding(30px, 50px, 30px, 50px);
+            @include margin(0px, 0px, auto, auto);
+            // font-family: bakhtiari !important;
+            text-align: center;
+
+            .title {
+                font-size: 16px !important;
+            }
+
+            .spn-price-green {
+                color: $silver;
+                @include font-size(50px);
+
+
+            }
+        }
+
+
+        .fn-box-final-price {
+            @include border-radius(20px, 20px, 20px, 20px);
+            border: solid 1px $light_silver;
+            @include padding(30px, 40px, 30px, 40px);
+            @include margin(0px, auto, auto, auto);
+            // font-family: bakhtiari !important;
+            text-align: center;
+
+            .title {
+                font-size: 16px !important;
+
+            }
+
+
+
+            .spn-price-green {
+                color: $green;
+                @include font-size(30px);
+                font-weight: bold;
+                text-align: center;
+                justify-content: center;
+                @include margin(0px, auto, auto, auto);
+
+
+            }
+        }
+
+
+        .fn-box-white-2 {
+            @include margin(0px, auto, auto, auto);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(15px, 20px, 15px, 20px);
+            @include font-size(16px);
+            background-color: $white;
+            -webkit-box-shadow: 0 0 30px #d6d6d6;
+            box-shadow: 0 0 30px #d6d6d6;
+            @include line-height(30px);
+
+            label {
+                @include font-size(20px);
+
+            }
+
+            span {
+                color: $silver;
+            }
+
+            p {
+                @include line-height(30px);
+            }
+
+            .v-icon {
+                color: $green;
+                @include font-size(85px);
+            }
+
+        }
+
+
+        .btn-order {
+
+            @extend .fn-box-1;
+            background-color: $green;
+            @include padding(20px, 20px, 20px, 20px);
+            color: $white !important;
+            @include font-size(16px);
+            cursor: pointer;
+
+
+        }
+
+
+    }
+
+    .showPrice {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 20px 1px #AEABAB;
+
+        label {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'iransansBold' !important;
+
+        }
+    }
+
+    .pricebox {
+        border: 1px solid lightgray;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+
+        p {
+            color: $green !important;
+            font-size: 30px !important;
+            font-weight: bold;
+            // font-family: 'iransansBold' !important;
+        }
+    }
+
+    .count-select {
+        background: none !important;
+        box-shadow: none !important;
+
+        fieldset {
+            border-width: 2px;
+            border-color: rgba(1, 102, 112, 0.2);
+            height: 50px;
+        }
+
+        .v-select__slot {
+            height: 50px;
+        }
+
+        .v-input__slot {
+            height: 0px;
+            min-height: 45px !important;
+        }
+
+        label {
+            font-family: 'bakhtiari' !important;
+            font-size: 16px !important;
+            font-weight: normal;
+        }
+
+        input {
+            background: none !important;
+            border: none !important;
+        }
+
+        .v-select__selections {
+            justify-content: center;
+
+            input {
+                display: none;
+            }
+        }
+
+    }
+
+    .count-select-mobile {
+        background: none !important;
+        box-shadow: none !important;
+
+        fieldset {
+            height: 30px;
+        }
+
+        .v-select__slot {
+            height: 30px;
+            min-height: 30px !important;
+        }
+
+        .v-input__slot {
+            height: 0px;
+            min-height: 25px !important;
+        }
+
+        label {
+            font-family: 'bakhtiari' !important;
+            font-size: 16px !important;
+            font-weight: normal;
+            padding-left: 50px;
+            left: auto;
+        }
+
+        input {
+            background: none !important;
+            border: none !important;
+        }
+
+        .v-select__selections {
+            justify-content: end;
+
+            input {
+                display: none;
+            }
+        }
+
+    }
+
+    .count-box {
+        position: relative;
+
+        .count-label {
+            position: absolute;
+            z-index: 1;
+            top: 12px;
+            padding-right: 20px;
+        }
+
+        .v-text-field__details {
+            display: none;
+        }
+
+        .v-input__slot {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    .count-box-mobile {
+        position: relative;
+        text-align: center;
+
+        .count-label {
+            position: relative;
+            z-index: 1;
+            margin-left: 10%;
+            color: $silver;
+        }
+
+        .v-text-field__details {
+            display: none;
+        }
+
+        .v-input__slot {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    .count-box-stair {
+        position: relative;
+
+        .count-label-stair {
+            position: absolute;
+            z-index: 1;
+            top: 12px;
+            padding-right: 20px;
+        }
+
+        .v-text-field__details {
+            display: none;
+        }
+
+        .v-input__slot {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    .goToCart {
+        button {
+            background-color: $green !important;
+            padding: 40px !important;
+            border: 2px solid $green;
+            transition: 1s;
+
+            span {
+                color: white;
+                font-family: 'iransansBold' !important;
+                letter-spacing: normal;
+                font-size: 25px;
+            }
+        }
+
+        button:hover {
+            background-color: white !important;
+            transition: 1s;
+
+            span {
+                color: $green;
+            }
+        }
+    }
+
+    @media (max-width:961px) and (min-width:361px) {
+        .salesidebar {
+            label {
+                font-size: 14px !important;
+            }
+
+            .offer-btn {
+                span {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .salesidebar {
+        background-color: #f2f2f2;
+        border-radius: 20px;
+
+
+        label {
+            font-family: boldbakhtiari !important;
+            font-size: 16px;
+        }
+
+        .option-name {
+            font-family: bakhtiari !important;
+            color: #8C8C8C;
+        }
+
+        .child-name {
+            font-family: bakhtiari !important;
+        }
+
+        .select-error {
+            font-family: boldbakhtiari !important;
+            color: #E9083E;
+        }
+
+        .select-warn {
+            font-family: bakhtiari !important;
+            color: #575757;
+        }
+
+        // .price-tag {
+        //     font-family: boldbakhtiari !important;
+        //     font-size: 40px;
+        //     color: $green;
+
+        //     span {
+        //         font-family: boldbakhtiari !important;
+
+        //     }
+        // }
+
+
+        @media (max-width:1140px) and (min-width:961px) {
+            .price-tag {
+                font-size: 25px;
+            }
+        }
+
+        @media (max-width:960px) {
+            .price-tag {
+                font-size: 30px;
+            }
+        }
+
+        // .nonprice-tag {
+        //     font-size: 40px;
+        //     padding-left: 30px;
+        // }
+
+        // .tooman {
+        //     font-family: bakhtiari !important;
+        // }
+
+        // .warnbox {
+        //     margin-top: -30px;
+        //     -webkit-animation: warn 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite both;
+        //     animation: warn 1s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite both;
+        //     background-color: rgba(233, 8, 62, 0.2);
+        //     padding: 9px;
+        //     border-radius: 20px;
+        //     text-align: center;
+
+        //     span {
+        //         font-size: 14px;
+        //         font-family: boldbakhtiari !important;
+        //         color: #E9083E;
+        //     }
+        // }
+
+        @media (max-width:961px) and (min-width:361px) {
+            .warnbox {
+                span {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        @-webkit-keyframes warn {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.2;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes warn {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .offer-btn {
+            background-color: none !important;
+            background: none !important;
+
+            span {
+                font-family: boldbakhtiari !important;
+                color: $green;
+                font-size: 16px;
+                letter-spacing: normal;
+            }
+        }
+    }
+
+    @media (max-width:961px) and (min-width:361px) {
+        .option-title {
+            font-size: 18px !important;
+        }
+    }
+
+    .option-title {
+        font-family: heavybakhtiari !important;
+        font-size: 20px;
+        color: $green;
+    }
+
+    .option-title-warn {
+        font-family: boldbakhtiari !important;
+        font-size: 16px;
+        color: #E9083E;
+    }
+
+    .option-title-lock-warn {
+        font-family: bakhtiari !important;
+        font-size: 16px;
+        color: #292929;
+        cursor: pointer;
+    }
+
+    .option-title-noSale-memo {
+        font-family: bakhtiari !important;
+        font-size: 16px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .detailbox {
+        border-bottom: 1px solid rgba(140, 140, 140, 0.5);
+        width: 100%;
+    }
+
+    @media (max-width:961px) and (min-width:361px) {
+        .pagedetails {
+            p {
+                font-family: 14px !important;
+            }
+        }
+    }
+
+    .pagedetails {
+        p {
+            font-family: bakhtiari !important;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+
+    .prodComment {
+        font-family: bakhtiari !important;
+        font-size: 14px;
+    }
+
+    .order-btn {
+        position: relative;
+        overflow: hidden;
+        background: #016670 !important;
+        border: none;
+        height: 45px !important;
+
+        span {
+            color: white !important;
+            font-family: boldbakhtiari !important;
+            letter-spacing: normal;
+            font-size: 20px;
+        }
+
+        box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    }
+
+    .order-btn:before {
+        position: absolute;
+        content: '';
+        animation: shiny-btn1 3s ease-in-out infinite;
+        background-color: #fff;
+        top: -180px;
+        left: 0;
+        width: 30px;
+        height: 100%;
+        display: inline-block;
+    }
+
+    @keyframes shiny-btn1 {
+        0% {
+            transform: scale(0) rotate(45deg);
+            opacity: 0;
+        }
+
+        80% {
+            transform: scale(0) rotate(45deg);
+            opacity: 0.5;
+        }
+
+        81% {
+            transform: scale(4) rotate(45deg);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(50) rotate(45deg);
+            opacity: 0;
+        }
+    }
+
+    .order-btn:hover {
+        opacity: 0.7;
+    }
+
+    .order-btn:active {
+        box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2),
+            inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    }
+
+    
+    .call-btn {
+        position: relative;
+        overflow: hidden;
+        border: none;
+        height: 45px !important;
+
+        span {
+            color: rgb(32, 32, 32) !important;
+            font-family: boldbakhtiari !important;
+            letter-spacing: normal;
+            font-size: 20px;
+        }
+
+        box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    }
+
+    // end final product
+    .tab-title {
+        span {
+            font-family: boldbakhtiari !important;
+
+        }
+    }
+
+    .temp-guid {
+        direction: rtl !important;
+        font-family: bakhtiari !important;
+        color: black;
+        font-size: 15px;
+    }
+
+    .temp-guid-product-name {
+        direction: rtl !important;
+        font-family: boldbakhtiari !important;
+        font-weight: 700;
+        color: black;
+        font-size: 15px;
+    }
+
+    @media (max-width:961px) and (min-width:361px) {
+        .temp-guid {
+            font-size: 14px !important;
+        }
+    }
+
+    .photoshop-temp {
+        margin: 3px;
+
+        .row {
+            background: #001E36;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 100%;
+            margin: 0px;
+            border: 3px solid #F2F2F2;
+            transition: 0.8s;
+
+            .imgbox {
+                text-align: left;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            .temptxt {
+                text-align: left;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                padding: 10px 0px 0px 0px;
+
+                p {
+                    text-align: left;
+                    font-family: bakhtiari !important;
+                    margin: 0px;
+                    color: white;
+                }
+
+                label {
+                    font-family: boldbakhtiari !important;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+    .photoshop-temp:hover {
+        .row {
+            transition: 0.8s;
+            border: 3px solid #001E36;
+        }
+    }
+
+    .illustrator-temp {
+        margin: 3px;
+
+        .row {
+            background: #331A00;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 100%;
+            margin: 0px;
+            border: 3px solid #F2F2F2;
+            transition: 0.8s;
+
+            .imgbox {
+                text-align: left;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            .temptxt {
+                text-align: left;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                padding: 10px 0px 0px 0px;
+
+                p {
+                    text-align: left;
+                    font-family: bakhtiari !important;
+                    margin: 0px;
+                    color: white;
+                }
+
+                label {
+                    font-family: boldbakhtiari !important;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+    .illustrator-temp:hover {
+        .row {
+            transition: 0.8s;
+            border: 3px solid #331A00;
+        }
+    }
+
+    .corel-temp {
+        margin: 3px;
+
+        .row {
+            background: #016622;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 100%;
+            margin: 0px;
+            border: 3px solid #F2F2F2;
+            transition: 0.8s;
+
+            .imgbox {
+                text-align: left;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            .temptxt {
+                text-align: left;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                padding: 10px 0px 0px 0px;
+
+                p {
+                    text-align: left;
+                    font-family: bakhtiari !important;
+                    margin: 0px;
+                    color: white;
+                }
+
+                label {
+                    font-family: boldbakhtiari !important;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+    .corel-temp:hover {
+        .row {
+            transition: 0.8s;
+            border: 3px solid #016622;
+        }
+    }
+
+    .pdf-temp {
+        margin: 3px;
+
+        .row {
+            background: #E9083E;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 100%;
+            margin: 0px;
+            border: 3px solid #F2F2F2;
+            transition: 0.8s;
+
+            .imgbox {
+                text-align: left;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            .temptxt {
+                text-align: left;
+                display: flex;
+                // align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                flex-direction: column;
+                padding: 10px 0px 0px 0px;
+                align-content: flex-end;
+
+                p {
+                    text-align: left;
+                    font-family: bakhtiari !important;
+                    margin: 0px;
+                    color: white;
+                }
+
+                label {
+                    font-family: boldbakhtiari !important;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+    .pdf-temp:hover {
+        .row {
+            transition: 0.8s;
+            border: 3px solid #E9083E;
+        }
+    }
+
+    @media (max-width:961px) {
+        .temp-guide-txt {
+            p {
+                font-size: 14px !important;
+                direction: rtl;
+                text-align: initial !important;
+            }
+
+            p:has(> img) {
+                text-align: center !important;
+            }
+        }
+    }
+
+    @media (max-width:701px) {
+        .temp-guide-txt {
+            p {
+                img {
+                    width: 100%;
+                }
+            }
+
+            p:has(> img) {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .temp-guide-txt {
+        p {
+            font-family: bakhtiari !important;
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: black;
+            direction: rtl;
+
+            a {
+                color: #930149;
+                font-family: boldbakhtiari !important;
+            }
+
+            img {
+                border-radius: 20px;
+                padding: 10px;
+            }
+        }
+
+        p:has(> img) {
+            text-align: center;
+        }
+    }
+
+    @media (max-width:961px) {
+        .intro-txt {
+            p {
+                font-size: 14px !important;
+                direction: rtl;
+                text-align: initial !important;
+            }
+
+            p:has(> img) {
+                text-align: center !important;
+            }
+
+        }
+    }
+
+    @media (max-width:701px) {
+        .intro-txt {
+            p {
+                img {
+                    width: 100%;
+                }
+            }
+
+            p:has(> img) {
+                text-align: center !important;
+            }
+        }
+    }
+
+    .intro-txt {
+        p {
+            font-family: bakhtiari !important;
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: black;
+            direction: rtl;
+
+            img {
+                border-radius: 20px;
+                padding: 10px;
+            }
+        }
+
+        p:has(> img) {
+            text-align: center;
+        }
+    }
+
+    .iconbox {
+        background: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    .option-caption {
+        font-family: bakhtiari !important;
+        font-size: 14px;
+        color: #8C8C8C;
+    }
+
+    .row:has(> .mytabs) {
+        margin-top: 100px;
+    }
+
+    @media (max-width:960px) {
+        .row:has(> .mytabs) {
+            margin-top: 20px;
+        }
+    }
+
+    .offer-checkbox {
+        margin-top: 0px;
+        background-color: $light-silver;
+        border-radius: 10px;
+        transition: 1s;
+        padding: 0px;
+
+        .v-input--selection-controls__input {
+            display: none !important;
+        }
+
+        label {
+            font-family: boldbakhtiari !important;
+            font-weight: 400;
+            font-size: 16px;
+            justify-content: center;
+        }
+
+        .v-messages {
+            display: none !important;
+        }
+
+        .v-input__slot {
+            padding: 5px 10px;
+            margin: 0px;
+        }
+    }
+
+    .offer-checkbox.v-input--is-label-active {
+        background-color: #016670;
+
+        label {
+            color: white;
+        }
+    }
+
+    @media (max-width:600px) {
+        .salesidebar {
+            label {
+                font-size: 14px !important;
+            }
+
+            span {
+                font-size: 14px !important;
+            }
+
+            p {
+                font-size: 25px !important;
+            }
+
+            button {
+                span {
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
+
+    .count-select-number {
+        background: none !important;
+        border: 1px solid darkgrey;
+        width: 95%;
+        text-align: center !important;
+    }
+
+    .seri-select-number {
+        background-color: white !important;
+        border: 2px solid rgba(1, 102, 112, 0.2);
+        min-height: 42px !important;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .finalPriceTirajBox {
+        background: #FFFFFF !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+
+    .finalProductMemoBox {
+        background: transparent !important;
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: #DCD2D2;
+        border-radius: 0 0 20px 20px;
+        margin-top: 5px;
+    }
+}
+
+.expansionTitle {
+    height: 30px !important;
+    text-align: right;
+    padding-top: 5px;
+
+    span {
+        font-family: boldbakhtiari !important;
+        letter-spacing: normal;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 25px;
+        /* identical to box height */
+
+        text-align: right;
+
+        color: #016670;
+    }
+}
+
+.clear-btn {
+    height: 30px !important;
+    border-radius: 15px;
+    color: #930149;
+
+    i {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    span {
+        font-size: 12px;
+        font-family: boldbakhtiari !important;
+        letter-spacing: normal;
+    }
+}

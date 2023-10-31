@@ -1,0 +1,94 @@
+@import "../../partials/colors";
+@import "../main.scss";
+
+.header_manager {
+  background-color: $white;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  @include border-radius(20px, 20px, 20px, 20px);
+
+  .title-name {
+    color: $green;
+
+    label {
+      color: $green;
+      @include margin(0, 3px, 0, 0);
+      font-family: bakhtiari !important;
+      @include font-size(16px);
+
+      &::after {
+        content: " ";
+        width: 0.5px;
+        height: 20px;
+        color: $silver;
+        background-color: $silver;
+        margin: 0px 5px 0px 5px;
+      }
+    }
+
+    span {
+      color: $silver;
+      @include font-size(14px);
+    }
+  }
+
+  .options {
+    color: $green;
+
+    span {
+      font-size: 11px;
+    }
+
+    .fa {
+      @include padding(5px, 5px, 5px, 5px);
+      background-color: $light_silver;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    .header_manager_item {
+      // background-color: $light_silver;
+      cursor: pointer;
+      padding: 0px 5px 5px 5px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+
+      span {
+        font-family: bakhtiari;
+        background-color: $white;
+        // padding: 5px;
+        margin-top: -5px;
+        font-weight: bold !important;
+      }
+
+      svg {
+        background-color: $light_silver;
+        width: 1.3rem;
+        height: 1.3rem;
+        padding: 5px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        margin-bottom: -5px;
+        transition: all 300ms;
+      }
+
+      &:hover {
+        svg {
+          background-color: $green;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.header_manager_item[disabled] {
+  span {
+    background-color: $white !important;
+    color: $silver;
+  }
+
+  svg {
+    color: $silver;
+  }
+}

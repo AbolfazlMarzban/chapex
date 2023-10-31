@@ -1,0 +1,710 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+input[type=pattern]:focus,
+.uneditable-input:focus {
+  border-color: #F2F2F2;
+  box-shadow: 0 1px 1px #F2F2F2 inset, 0 0 1px #F2F2F2;
+  outline: 0 none;
+  background-color: #F2F2F2;
+}
+
+body {
+  background-color: #F2F2F2;
+  font-family: bakhtiari !important;
+  direction: rtl;
+  text-align: right;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #000000;
+}
+
+.clr {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.effect-1,
+a {
+  transition: all 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+a {
+  color: #016670;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8C8C8C;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8C8C8C;
+  text-decoration: none;
+}
+
+.first-box {
+  margin: 90px auto auto auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 30px 40px 30px 40px;
+  font-family: bakhtiari !important;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  min-height: 430px;
+}
+
+.first-box h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.first-box label {
+  font-weight: 700;
+  font-size: 12px;
+  color: #8C8C8C;
+  word-spacing: -3px;
+  line-height: 20px;
+}
+
+.first-box input {
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  background-color: #F2F2F2;
+  font-size: 12px;
+}
+
+.first-box p {
+  text-align: center;
+  color: #000000;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 20px;
+  word-spacing: -2px;
+}
+
+.btn-green {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #016670;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 40px 10px 40px;
+  min-width: 100%;
+  outline: none;
+}
+
+.btn-green:focus {
+  outline: 0 !important;
+  border: none;
+}
+
+.btn-green:focus {
+  outline: 0 !important;
+}
+
+.ftr {
+  color: #8C8C8C;
+  font-weight: 900;
+  margin: 0 auto auto auto;
+  text-align: center;
+}
+
+.ftr p {
+  text-align: center;
+  color: #8C8C8C;
+  font-weight: 420;
+  font-size: 12px;
+}
+
+.ftr a {
+  font-weight: normal;
+}
+
+.pd-0 {
+  padding: 0px 0px 0px 0px;
+}
+
+.mrg-top-5 {
+  margin: 5px auto auto auto;
+}
+
+.mrg-top-10 {
+  margin: 10px 0 0 0;
+}
+
+.mrg-top-15 {
+  margin: 15px auto auto auto;
+}
+
+.welcome-box {
+  margin: 90px auto auto auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 30px 40px 30px 40px;
+  font-family: bakhtiari !important;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  text-align: center;
+  min-height: 430px;
+}
+
+.welcome-box h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.welcome-box label {
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+  word-spacing: -3px;
+  line-height: 20px;
+}
+
+.welcome-box p {
+  text-align: center;
+  color: #016670;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  word-spacing: -2px;
+}
+
+.coming-box {
+  margin: 50px auto auto auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 30px 40px 30px 40px;
+  font-family: bakhtiari !important;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  text-align: center;
+  min-height: 430px;
+}
+
+.coming-box h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.coming-box label {
+  font-weight: 700;
+  font-size: 12px;
+  color: #000000;
+  word-spacing: -3px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.profile-page-desktop {
+  background-color: #F2F2F2;
+  color: #8C8C8C;
+  font-family: bakhtiari !important;
+}
+
+.profile-page-desktop .top {
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 30px auto auto auto;
+  border-radius: 20px 20px 20px 20px;
+  padding: 15px 40px 10px 40px;
+  font-family: bakhtiari !important;
+  font-size: 14px;
+}
+
+.profile-page-desktop .fa {
+  color: #8C8C8C;
+}
+
+.profile-page-desktop .mr-right {
+  margin: 0px 20px 0px 0px;
+}
+
+.profile-page-desktop .first-top-row {
+  text-align: right;
+}
+
+.profile-page-desktop .first-top-row .sh-basket {
+  background-color: #930148;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+
+.profile-page-desktop .first-top-row .sh-basket .fa-shopping-cart {
+  color: #FFFFFF;
+}
+
+.profile-page-desktop .first-top-row input {
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  background-color: #F2F2F2;
+  font-size: 12px;
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+}
+
+.profile-page-desktop .first-top-row ul {
+  list-style-type: none;
+}
+
+.profile-page-desktop .first-top-row ul li {
+  display: inline-block;
+}
+
+.profile-page-desktop .first-top-row ul li input {
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  background-color: #F2F2F2;
+  width: 513px !important;
+  font-size: 12px;
+  font-size: 12px;
+}
+
+.profile-page-desktop .second-top-row {
+  text-align: right;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.profile-page-desktop .second-top-row .design-archive {
+  background-color: #F2F2F2;
+  color: #000000;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px 5px 5px 5px;
+  width: 150px !important;
+  text-align: center;
+}
+
+.profile-page-desktop .grn-number {
+  color: #016670;
+  font-size: 25px;
+}
+
+.profile-page-desktop .second-top-row ul {
+  list-style-type: none;
+  padding: 0 12px 0 0;
+}
+
+.profile-page-desktop .second-top-row ul li {
+  display: inline-block;
+  padding: 3px 11px 0px 10px;
+}
+
+.profile-page-desktop .vl-line {
+  border-left: 2px solid #8C8C8C;
+  height: 500px;
+}
+
+.profile-page-desktop .right-menu {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.profile-page-desktop .right-menu .user {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px 5px 0px 5px;
+  line-height: 25px;
+}
+
+.profile-page-desktop .right-menu .user .fa {
+  color: #016670;
+}
+
+.profile-page-desktop .right-menu .user label {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.profile-page-desktop .right-menu .user span {
+  font-size: 12px;
+}
+
+.profile-page-desktop .right-menu .list-menu {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  padding: 15px 15px 15px 15px;
+  line-height: 40px;
+  margin: 10px auto auto auto;
+}
+
+.profile-page-desktop .right-menu .list-menu hr {
+  background-color: #F2F2F2;
+  border-radius: 20px 20px 20px 20px;
+  padding: 0 0 0 0;
+  margin: 15px 0 0 0;
+}
+
+.profile-page-desktop .right-menu .list-menu img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.profile-page-desktop .right-menu .list-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.profile-page-desktop .right-menu .list-menu a:hover {
+  color: #8C8C8C;
+}
+
+.profile-page-desktop .right-menu .list-menu .user-info {
+  background-color: #F2F2F2;
+  padding: 0px 10px 0px 10px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.profile-page-desktop .right-menu .adver-banner {
+  border-radius: 20px 20px 20px 20px;
+  margin: 10px auto auto auto;
+  padding: 50px 50px 50px 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+}
+
+.profile-page-desktop .left-menu .tbl-content {
+  background-color: #FFFFFF;
+  padding: 20px 20px 20px 20px;
+  line-height: 25px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.profile-page-desktop .left-menu .personal-info {
+  background-color: #016670;
+  color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  padding: 5px 5px 5px 5px;
+  width: 200px !important;
+  text-align: center;
+}
+
+.profile-page-desktop .left-menu .date {
+  padding: 10px 10px 10px 10px;
+  color: silver;
+}
+
+.profile-page-desktop .left-menu label {
+  color: #000000;
+  font-weight: 500;
+}
+
+.profile-page-desktop .left-menu span {
+  color: #8C8C8C;
+  font-weight: 500;
+}
+
+.profile-page-desktop .left-menu .fa {
+  color: #016670;
+  cursor: pointer;
+}
+
+.profile-page-desktop .left-menu table {
+  min-width: 100%;
+  line-height: 25px;
+}
+
+.profile-page-desktop .left-menu table td {
+  padding: 5px 10px 5px 10px;
+}
+
+.profile-page-desktop .left-menu table label {
+  font-size: 13px;
+}
+
+.profile-page-desktop .left-menu table span {
+  font-size: 12px;
+}
+
+.profile-page-desktop .left-menu .tbl-left-line {
+  border-left: solid 1px #F2F2F2;
+  padding: 10px;
+}
+
+.profile-page-desktop .left-menu .tbl-top-line {
+  border-top: solid 1px #F2F2F2;
+  padding: 10px;
+}
+
+.profile-page-desktop .left-menu select {
+  width: 300px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px 20px 20px 20px;
+  outline: none;
+  background-color: #F2F2F2 !important;
+  color: #8C8C8C;
+  border: none;
+  font-size: 12px;
+  background: url(../../../static/arrow-down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 10px;
+}
+
+.profile-page-desktop .left-menu .form-control:focus {
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(44, 44, 44, 0.075), 0 0 8px rgba(44, 44, 44, 0.075);
+  box-shadow: inset 0 1px 1px rgba(44, 44, 44, 0.075), 0 0 8px rgba(44, 44, 44, 0.075);
+}
+
+.profile-page-desktop .left-menu .legal {
+  border-radius: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: #FFFFFF;
+  margin: 10px auto auto auto;
+  font-size: 13px;
+}
+
+.profile-page-desktop .left-menu .legal p {
+  color: #000000;
+  margin: 10px auto auto auto;
+}
+
+.profile-page-desktop .left-menu .legal a {
+  font-weight: bold;
+}
+
+.profile-page-desktop .left-menu .legal button {
+  margin: 41px 0px 0px 0px;
+  background-color: #930148;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  padding: 7px 7px 7px 7px;
+}
+
+.profile-page-desktop .left-menu .legal input {
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  background-color: #F2F2F2;
+  font-size: 12px;
+}
+
+.profile-page-desktop .left-menu .legal label {
+  padding: 20px 0 10px 0;
+}
+
+.profile-page-desktop .left-menu .legal .fa {
+  color: #FFFFFF;
+}
+
+.profile-page-desktop .left-menu .legal .legal-info {
+  background-color: #016670;
+  color: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+  width: 200px !important;
+  text-align: center;
+}
+
+.m-top {
+  background-color: #FFFFFF;
+  color: #8C8C8C;
+  padding: 10px 10px 10px 10px;
+  font-size: 12px;
+}
+
+.m-top hr {
+  background-color: #F2F2F2;
+  border-radius: 20px 20px 20px 20px;
+  padding: 0 0 0 0;
+  margin: 5px 0 5px 0;
+}
+
+.m-top .m-menu .fa-align-justify {
+  cursor: pointer;
+}
+
+.m-top .m-menu #menu-content {
+  padding: 0 0 0 0;
+  margin: 15px 0 0 0;
+}
+
+.m-top .m-menu #menu-content h2 {
+  color: #016670;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.m-top .m-menu #menu-content label {
+  cursor: pointer;
+  line-height: 40px;
+}
+
+.m-top .m-menu #menu-content .gift-content {
+  padding: 0 25px 5px 0;
+}
+
+.m-top .m-menu #menu-content .gift-content ul li {
+  list-style-type: square;
+  cursor: pointer;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

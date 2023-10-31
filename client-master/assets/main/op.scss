@@ -1,0 +1,705 @@
+@charset "UTF-8";
+@import "../main/colors";
+@import "../main/mixin";
+@import '../main/inputs';
+@import '../main/widths';
+@import '../main/mrg';
+@import '../main/fnsize';
+
+.user-opinion {
+    font-family: bakhtiari !important;
+    direction: rtl;
+    line-height: 30px;
+
+    .uprogress {
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(0px, 5px, 0px, 0px);
+            }
+        }
+
+        .uprogress-empty {
+            background-color: $silver;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(3px, 30px, 3px, 30px);
+
+        }
+
+        .uprogress-fill {
+            background-color: $light_green;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(3px, 30px, 3px, 30px);
+        }
+    }
+
+    .mdi-plus-circle {
+        color: $green_y;
+        font-size: 16px;
+    }
+
+    .mdi-minus-circle {
+        color: #FF0000;
+        font-size: 16px;
+    }
+
+    .btn-order {
+        margin: 0px auto;
+        border-radius: 15px;
+        padding: 0px 15px 0px 15px;
+        font-size: 18px;
+        border: 0;
+        text-align: center;
+        background-color: $green;
+        color: $white !important;
+        cursor: pointer;
+
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+        }
+    }
+
+
+    sp-title {
+        color: #8C8C8C;
+    }
+
+    sp-text {
+        color: #000 !important;
+    }
+
+
+}
+
+.left-content {
+    direction: rtl;
+    text-align: right;
+    font-family: bakhtiari !important;
+
+
+
+
+
+    .attention {
+        color: $red;
+        font-weight: bold;
+        @include font-size(16px);
+    }
+
+
+    .isSearch {
+        background-color: $white;
+        @include padding(10px, 10px, 10px, 10px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include margin(10px, 0px, 0px, 0px);
+
+        .txtSrch {
+            @include margin(0px, 0, 0, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+
+            background-color: $light_silver;
+            @include padding(5px, 15px, 5px, 5px);
+            color: $green;
+            @include font-size(14px);
+            min-width: 100%;
+        }
+
+        ::placeholder {
+            color: $green;
+        }
+
+
+    }
+
+    .test {
+        background-color: $white;
+        border-radius: 20px;
+        padding: 20px;
+        border: solid 1px #CCC;
+        margin-top: 10px;
+    }
+
+
+    .my-new-tab {
+        @include font-size(16px);
+        font-weight: bolder;
+    }
+
+    //start tab 
+    .my-tab {
+        background-color: #FFFFFF;
+        @include margin(10px, 0px, 0px, 0px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(20px, 20px, 20px, 20px);
+        color: #8C8C8C;
+        font-size: 14px;
+        box-shadow: 0 8px 6px -6px #8c8c8c;
+        font-family: bakhtiari !important;
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 5px 5px 5px 5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 0 10px 0 0;
+        }
+
+        .vl-line {
+            @include padding(0, 15px, 0, 0);
+            border-left: 1px solid #F2F2F2;
+            height: 600px;
+        }
+
+        .vl-line-silver {
+            @include padding(0, 15px, 0, 0);
+            border-left: 1px solid $silver;
+            height: 600px;
+        }
+
+        .options {
+            color: $green;
+
+            .mdi {
+                @include padding(5px, 5px, 5px, 5px);
+                background-color: $light_silver;
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+                color: $green;
+                @include font-size(14px);
+            }
+
+            span {
+                @include padding(0, 0, 0, 5px);
+            }
+        }
+
+        .title-name {
+            color: $green;
+            font-family: bakhtiari !important;
+
+            .mdi-account-plus {
+                color: $green;
+                @include font-size(16px);
+                padding-left: 5px !important;
+            }
+
+            label {
+                color: $green;
+                @include margin(0, 3px, 0, 0);
+                font-family: bakhtiari !important;
+                @include font-size(16px);
+            }
+
+            span {
+                color: $silver;
+                @include font-size(14px);
+                @include margin(0, 5px, 0, 0);
+                font-family: bakhtiari !important;
+            }
+        }
+    }
+
+    .icons {
+        color: $green;
+        @include margin(0, 0, 0, 10px);
+        @include font-size(16px);
+    }
+
+    .root {
+        min-width: 100%;
+
+        .breadcrumb {
+            color: $green;
+            @include font-size(12px);
+            background-color: $light_silver;
+            @include font-size(16px !important);
+            @include line-height(20px);
+            @include padding(0, 0, 0, 0);
+
+            .mdi-home {
+                @include font-size(25px !important);
+            }
+
+
+            .icons {
+                color: $green;
+            }
+
+            span {
+                @include margin(0px, -5px, 0px, 0px);
+                font-weight: 900;
+
+            }
+        }
+
+        .srch-icons {
+
+            ul {
+                list-style-type: none
+            }
+
+            li {
+                display: inline-block;
+
+                .icons {
+                    color: $green;
+                    @include padding(5px, 0, 0, 0);
+                    @include font-size(25px);
+                }
+            }
+
+        }
+    }
+
+    //end root
+    .my-tab-test {
+        background-color: #FFFFFF;
+        @include margin(10px, 0px, 0px, 0px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        color: #8C8C8C;
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+            @include padding(5px, 5px, 5px, 5px);
+            font-weight: 900;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 0 10px 0 0;
+            font-size: 16px;
+        }
+
+        .vl-line {
+            @include padding(0, 15px, 0, 0);
+            border-left: 1px solid #F2F2F2;
+            height: 600px;
+        }
+    }
+
+
+
+    .tstt {
+        padding: 5px 5px 5px 5px;
+        background-color: #f2f2f2;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        color: #016670;
+        margin-right: 5px;
+        font-size: 14px !important;
+    }
+
+    .do-scroll {
+        overflow-x: scroll !important;
+    }
+
+
+
+    //start main content
+    .main-content {
+        background-color: $white;
+        @include margin(10px, 0px, 0px, 0px);
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(15px, 15px, 15px, 15px);
+        color: $silver;
+        @include font-size(13px !important);
+        font-family: bakhtiari !important;
+
+        .white-boxx {
+            @include margin(0px, auto, auto, auto);
+            background-color: #FFF;
+            @include padding(10px, 10px, 10px, 10px);
+            border-radius: 20px;
+            color: #016670;
+            box-shadow: 10px 10px 50px #e8f1f2;
+            font-family: iransansBold !important;
+            @include font-size(14px !important);
+            cursor: pointer;
+            line-height: 20px;
+
+        }
+
+
+        .green-boxx {
+            @include margin(0px, auto, auto, auto);
+            background-color: $green;
+            @include padding(10px, 10px, 10px, 10px);
+            border-radius: 20px;
+            color: $white;
+            box-shadow: 10px 10px 50px #e8f1f2;
+            font-family: iransansBold !important;
+            @include font-size(14px !important);
+            cursor: pointer;
+            line-height: 20px;
+
+        }
+
+        .close-style {
+
+            color: $silver;
+            @include font-size(14px);
+            @include padding(2px, 2px, 2px, 2px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+
+        .btn-action {
+            @include margin(10px, 0px, 0px, 0px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(5px, 15px, 5px, 5px);
+            color: $white;
+            @include font-size(16px !important);
+            background-color: $green;
+            cursor: pointer;
+
+        }
+
+        .modal-btn-group {
+            background-color: transparent;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+
+
+
+        img {
+            @include border-radius(20px, 20px, 20px, 20px);
+        }
+
+
+        .my-box-silver {
+            background-color: $light_silver;
+            @include padding(10px, 10px, 10px, 10px);
+            @include border-radius(20px, 20px, 20px, 20px);
+            width: 70px;
+            height: 70px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: $green;
+
+            .v-icon {
+                color: $green !important;
+                @include font-size(17px);
+            }
+        }
+
+        .green-line-tab {
+            color: $green;
+            background-color: $green;
+            @include padding(3px, 0px, 0px, 3px);
+            @include border-radius(20px, 20px, 20px, 20px);
+        }
+
+
+        .amounts {
+            @include font-size(15px);
+        }
+
+
+        .close {
+            color: $red;
+            @include font-weight(600);
+            cursor: pointer;
+            @include font-size(16px);
+        }
+
+        thead {
+            th:hover {
+                background-color: $green !important;
+                color: $white;
+            }
+        }
+
+        label {
+            @include font-size(16px !important);
+        }
+
+        .table-cover {
+            border: solid 1px $light_silver;
+            border-radius: 20px;
+            @include padding(10px, 10px, 10px, 10px);
+
+            input[type="text"],
+            textarea {
+                height: 30px;
+                width: 100px;
+            }
+
+            select {
+                border-radius: 20px;
+                outline: none;
+                height: 30px;
+                @include padding(0px, 5px, 0px, 0px);
+                color: $black;
+                border: none;
+                font-size: 12px;
+                background: url(/img/arrow-down.png) no-repeat right #ddd;
+                -webkit-appearance: none;
+                background-position-x: 10px;
+            }
+        }
+
+        textarea {
+            min-width: 100% !important;
+        }
+
+        .subject {
+            @include font-size(16px !important);
+            color: $green;
+        }
+
+        .green-line-1 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 90px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 12px;
+        }
+
+        .green-line-2 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 185px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 138px;
+        }
+
+        .green-line-3 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 70px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 11px;
+        }
+
+        .green-line-4 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 75px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 110px;
+        }
+
+        .green-line-5 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 117px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 13px;
+        }
+
+        .green-line-6 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 150px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 170px;
+        }
+
+        .green-line-7 {
+            color: $green;
+            background-color: $green;
+            @include padding(2px, 2px, 2px, 2px);
+            width: 145px;
+            @include border-radius(20px, 20px, 20px, 20px);
+            margin-right: 13px;
+        }
+
+        .green-line-8 {
+            @extend .green-line-6;
+            width: 80px;
+            margin-right: 345px;
+        }
+
+        .green-line-9 {
+            @extend .green-line-6;
+            width: 75px;
+            margin-right: 135px;
+        }
+
+        .green-line-10 {
+            @extend .green-line-9;
+            width: 65px;
+            margin-right: 163px;
+        }
+
+        .green-line-11 {
+            @extend .green-line-10;
+            width: 60px;
+            margin-right: 255px;
+        }
+
+        .green-line-12 {
+            @extend .green-line-11;
+            width: 75px;
+            margin-right: 345px;
+        }
+
+        .green-line-13 {
+            @extend .green-line-11;
+            width: 103px;
+            margin-right: 452px;
+        }
+
+        .v-select label {
+            font-size: 13px;
+        }
+
+        hr {
+            border: 0.5px solid $light_silver;
+            color: $light_silver !important;
+            background-color: $light_silver;
+        }
+
+        select {
+            padding: 7px 7px 7px 7px;
+            margin: 5px 0 0 0;
+            border-radius: 20px;
+            outline: none;
+            background-color: #F2F2F2 !important;
+            color: #8C8C8C;
+            border: none;
+            font-size: 12px;
+            background: url(/img/arrow-down.png) no-repeat right #ddd;
+            -webkit-appearance: none;
+            background-position-x: 10px;
+        }
+
+        .chart-btn {
+            background-color: #016670 !important;
+            color: $white;
+            border-radius: 20px;
+
+        }
+
+        .list-btn {
+            background-color: #016670 !important;
+            color: $white;
+            border-radius: 20px;
+            font-family: bakhtiari !important;
+            text-align: left;
+            float: left;
+        }
+
+        .add-feature-1 {
+            background-color: $green;
+            text-align: center;
+            color: #FFF;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(7px, 7px, 7px, 7px);
+            width: 220px;
+        }
+
+        .add-feature-2 {
+            background-color: $green;
+            text-align: center;
+            color: #FFF;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include padding(7px, 7px, 7px, 7px);
+            width: 290px;
+        }
+
+        .subject {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .black-rec {
+            width: 150px;
+            height: 15px;
+            background-color: #000;
+            @include border-radius(20px, 20px, 20px, 20px);
+            @include margin(5px, 0px, 0px, 0px);
+        }
+
+        .edit {
+            color: $green;
+            @include font-weight(600);
+            cursor: pointer;
+            @include font-size(16px);
+        }
+
+        table {
+
+            overflow-x: scroll !important;
+            color: $silver;
+            @include font-size(16px);
+            color: $black;
+            min-width: 100%;
+
+            input[type="text"] {
+                background-color: $light_silver;
+                border-radius: 20px;
+                min-width: 100% !important;
+            }
+
+            th {
+                color: $silver;
+                border: none;
+                padding: 10px;
+            }
+
+            tr {
+                line-height: 30px;
+            }
+
+            td {
+                border-bottom: solid 1px $light_silver;
+                line-height: 50px;
+            }
+        }
+
+        .form-control {
+            border-radius: 20px 20px 20px 20px;
+            border: none;
+            background-color: #F2F2F2;
+            font-size: 15px !important;
+            padding: 5px 10px 5px 10px;
+            font-size: 12px;
+            margin: 5px 0 0 0;
+            min-width: 100%;
+        }
+    }
+
+    //end main content
+}
+
+
+.my-new-tab {
+    background-color: red !important;
+}

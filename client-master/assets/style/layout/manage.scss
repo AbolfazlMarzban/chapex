@@ -1,0 +1,363 @@
+@import "../../partials/colors";
+@import "../main.scss";
+@import '../../colors.scss';
+//start right content
+
+
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>th,
+.v-data-table>.v-data-table__wrapper>table>thead>tr>td,
+.v-data-table>.v-data-table__wrapper>table>thead>tr>th,
+.v-data-table>.v-data-table__wrapper>table>tfoot>tr>td,
+.v-data-table>.v-data-table__wrapper>table>tfoot>tr>th {
+  padding: 7px 3px !important;
+}
+
+
+
+
+
+.right-content {
+  .logo {
+    background-color: $white;
+
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include padding(15px, 25px, 15px, 25px);
+  }
+
+  .user-img {
+    background-color: $white;
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include padding(15px, 15px, 15px, 15px);
+    min-height: 100px;
+    @include line-height(20px);
+
+    img {
+      background-color: $white;
+      width: 70px;
+      height: 70px;
+      @include padding(3px, 3px, 3px, 3px);
+      @include border-radius(20px, 20px, 20px, 20px);
+      float: right;
+      border: solid 1px $light_silver;
+      box-shadow: 2px 2px 2px $silver;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .user-info {
+
+      //   float: right;
+      label {
+        font-family: bakhtiari !important;
+        font-weight: normal !important;
+        font-size: 14px !important;
+        color: $black-medium !important;
+        @include margin(5px, 5px, 0, 0);
+        @include font-size(13px);
+      }
+
+      i {
+        font-size: 1rem;
+        color: $green;
+      }
+
+      span.user-phone-number {
+        font-family: bakhtiari !important;
+        font-weight: normal;
+        font-size: 14px !important;
+        color: $silver !important;
+      }
+
+      span.user-edit {
+        font-family: bakhtiari !important;
+        font-weight: normal;
+        font-size: 12px !important;
+        color: $green !important;
+        @include font-size(12px);
+        @include margin(0, 5px, 0, 0);
+        font-size: 10px;
+        color: #016670 !important;
+        margin-right: 0px !important;
+        cursor: pointer;
+      }
+    }
+
+    .icons {
+      color: $green;
+      @include font-size(12px);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      @include margin(0, 5px, 0, 0);
+      background-color: $light_silver;
+      @include padding(3px, 3px, 3px, 3px);
+    }
+  }
+
+  //end user img
+  .manage_side_menu_user_icon_edit {
+    color: $green;
+  }
+
+  .right-menu-green {
+    background-color: $green;
+    min-height: 300px;
+
+    @include border-radius(20px, 20px, 20px, 20px);
+    @include padding(20px, 20px, 20px, 20px);
+    @include font-size(13px);
+
+    a {
+      cursor: pointer;
+    }
+
+    .sub-content {
+      @include padding(0px, 17px, 10px, 0px);
+      line-height: 23px;
+
+      label {
+        @include font-weight(normal);
+        @include font-size(12px);
+      }
+
+      .active-link {
+        background-color: $white;
+        @include border-radius(20px, 20px, 20px, 20px);
+        color: $green;
+        @include padding(2px, 5px, 2px, 5px);
+        @include font-size(13px);
+      }
+    }
+
+    ul {
+      color: $white;
+      @include margin(5px, 0, 0, 0);
+    }
+
+    ul li div.item {
+      transition: background-color ease-in 0.15s;
+
+      &:hover {
+        background-color: $white;
+        border-radius: 20px;
+        color: $green !important;
+        padding: 0 10px !important;
+
+        a {
+          color: $green !important;
+        }
+      }
+
+      margin: 5px 0 !important;
+      border-radius: 20px;
+
+    }
+
+    ul.manage_side_menu_subItem li {
+      a {
+        font-family: bakhtiari !important;
+        font-weight: normal;
+        font-size: 14px !important;
+        color: $white;
+        @include line-height(35px);
+      }
+
+      transition: background-color ease-in 0.15s;
+
+      &:hover {
+        background-color: $white;
+        border-radius: 20px;
+        color: $green !important;
+        padding: 0 10px !important;
+
+        a {
+          color: $green !important;
+        }
+      }
+
+      margin: 5px 0 !important;
+      border-radius: 20px;
+    }
+
+
+    ul li div.item a {
+      font-family: bakhtiari !important;
+      font-weight: normal;
+      font-size: 14px !important;
+      color: $white;
+      @include line-height(35px);
+
+    }
+
+    .fa-caret-left {
+      @include margin(10px, 0, 0, 0);
+    }
+  }
+
+  //end right menu green
+}
+
+//end right content
+
+.root {
+  min-width: 100%;
+
+  .breadcrumb {
+    color: $green;
+    @include font-size(12px);
+    background-color: $light_silver;
+    @include font-size(12px);
+    @include line-height(20px);
+    @include padding(0, 0, 0, 0);
+
+    span.root-1 {
+      font-family: bakhtiari !important;
+      font-size: 12px !important;
+      font-weight: normal !important;
+
+    }
+
+    span.root-2 {
+      font-family: bakhtiari !important;
+      font-size: 12px !important;
+      font-weight: bold !important;
+    }
+
+    .fa-home {
+      @include font-size(16px);
+    }
+  }
+
+  .srch-icons {
+    ul {
+      list-style-type: none;
+      padding-left: 0px;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    .txtSrch {
+      @include margin(0px, 0, 0, 0);
+      @include border-radius(20px, 20px, 20px, 20px);
+      border: solid 1.5px $green;
+      background-color: $light_silver;
+      height: auto;
+      @include padding(0, 10px, 0, 15px);
+      color: $green;
+      @include font-size(13px);
+    }
+
+    ::placeholder {
+      color: $green;
+    }
+
+    .icons {
+      color: $green;
+      word-spacing: 7px;
+      @include margin(0, 0, 0, 10px);
+      @include font-size(20px);
+    }
+  }
+}
+
+//end root
+
+.user-title {
+  background-color: $white;
+  @include padding(5px, 10px, 5px, 10px);
+  @include border-radius(20px, 20px, 20px, 20px);
+  font-family: bakhtiari !important;
+  @include font-weight(800);
+  @include font-size(20px);
+
+  @include margin(0, 10px, 0, 0);
+
+  .name {
+    color: $green;
+    @include margin(0px, 10px, 0, 0);
+  }
+
+  span {
+    font-family: bakhtiari !important;
+    float: right;
+    margin-top: 9px !important;
+  }
+
+  .company {
+    color: $red;
+  }
+
+  .fa-user {
+    background-color: $light_silver;
+    @include padding(10px, 10px, 10px, 10px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: $green;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: right;
+  }
+}
+
+// end user title
+
+.manage_side_menu_subItem {
+  li {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
+
+.fns-20 {
+  font-size: 20px !important;
+}
+
+.cursor-to-pointer {
+  cursor: pointer !important;
+}
+
+
+
+.loading-container {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.loading-text {
+  color: #016670;
+  font-family: bakhtiari;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #016670;
+  border-color: #016670 transparent #016670 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

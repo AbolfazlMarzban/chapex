@@ -1,0 +1,108 @@
+@import "../../style.scss"; 
+.datapicker {
+    direction: ltr;
+    margin-top: 0px !important;
+    position: relative;
+    padding: 15px 0 0;
+    .vpd-input-group { 
+        label { 
+            background-color: $light_silver !important;
+            border-top-right-radius: 20px ;
+            border-bottom-right-radius: 20px ;
+        }
+    }
+    .form-control{ 
+        opacity: 1;
+        display: none;
+    }
+    .showInput {
+        position: absolute;
+        top: 15px;
+        right: 0 !important;
+        width: 100%;
+        width: calc(100% - 36px);
+        height: 31px;
+        border-top-right-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+        background-color: $light_silver;
+        border: 0px ;
+    }
+    input:focus + .form__label { 
+        top: -6px;
+        font-size: 0.9rem ;
+        color :$green; 
+    }
+    input {
+        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+        text-align: left;
+        &:disabled { 
+            background-color: $light_gray;
+        }
+    }
+    .datapickers{
+        width: 150px;
+        .vpd-icon-btn {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            svg{
+                height: 31px;
+                display: block;
+                fill: $black ;
+            }
+        }
+    }
+}
+
+
+.errorMessages { 
+    background-color: transparent;
+    color: #f14545 !important;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 9pt;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    top: 43px;
+}
+
+.form__label {
+    right: 0 !important;
+    position: absolute;
+    top: -12px;
+    display: block;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+
+.date_picker_right_click_menu {
+    background-color: $white;
+    position: absolute;
+    max-width: 120px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgba(96, 96, 96, 0.14),
+      0 3px 1px -2px rgba(96, 96, 96, 0.12), 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+    p {
+      cursor: pointer;
+      text-align: right;
+      margin-bottom: 0px;
+      padding: 8px 5px;
+      font-weight: 500;
+      border-bottom: 1px solid whitesmoke;
+      transition: all 300ms;
+      font-size: 0.9rem;
+      &:hover { 
+          background-color: whitesmoke;
+      }
+      &:last-child {
+        border-bottom: 0px solid whitesmoke;
+      }
+    }
+  }
+  

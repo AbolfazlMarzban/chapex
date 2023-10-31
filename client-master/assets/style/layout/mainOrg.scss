@@ -1,0 +1,888 @@
+@charset "UTF-8";
+@import "../../mainmixin/colors";
+@import "../../mainmixin/mixin";
+@import '../../mainmixin/inputs';
+@import '../../mainmixin/widths';
+@import '../../mainmixin/mrg';
+@import '../../mainmixin/fnsize';
+@import '../../mainmixin/brdr';
+
+
+
+
+
+@font-face {
+    font-family: boldbakhtiari;
+    src: url('/static/fonts/YekanBakh/YekanBakh-Bold.ttf');
+}
+
+.utop-part {
+    background-color: $white;
+    @include margin(0px, auto, auto, auto);
+    @include line-height(50px);
+    //font-family: bakhtiari !important;
+    background-image: url(../../mainLayoutImg/index.jpg);
+    background-position: center;
+    font-family: bakhtiari !important;
+    @include padding(10px, 20px, 0px, 20px);
+    height: 250px;
+    background-repeat: repeat-x !important;
+
+
+
+    //start mobile-menu
+    .mobile-menu {
+        color: $silver;
+        line-height: 0px;
+        @include font-size(16px);
+        font-family: bakhtiari !important;
+        background-color: $white;
+
+
+
+        .mrg-minus-top-15 {
+            margin-top: -15px;
+        }
+
+
+
+        .logo {
+            color: $green;
+            font-family: bakhtiari !important;
+            font-size: 20px !important;
+
+        }
+
+        .mdi-account {
+            color: $silver !important;
+        }
+
+        .hr-line {
+            min-width: 100%;
+            color: $mid-silver;
+            background-color: $mid-silver;
+            height: 0.5px;
+        }
+
+        .m-srch {
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: right;
+            height: 30px;
+            background-color: $light_silver;
+            @include padding(10px, 15px, 5px, 0px);
+            color: $silver;
+            background-color: $white;
+            border: solid 1px $light-silver;
+            @include font-size(14px);
+            min-width: 100%;
+
+        }
+
+
+        .mobile-content {
+            background-color: $white;
+            line-height: 30px;
+            position: relative;
+            z-index: 9999;
+            @include padding(0px, 15px, 5x, 20px);
+
+            .v-icon {
+                @include font-size(20px);
+            }
+
+
+
+            ul {
+                list-style-type: none;
+            }
+
+            ul li {
+                display: inline-block;
+
+
+            }
+
+
+
+        }
+    }
+
+    //end mobile-menu
+
+
+    .mdi-account {
+        color: $green !important;
+    }
+
+    .mdi-cart {
+        color: $white !important;
+    }
+
+    .utxtSrch {
+        @include border-radius(20px, 20px, 20px, 20px);
+        text-align: right !important;
+        float: right;
+        height: 30px;
+        background-color: $light_silver;
+        @include padding(0px, 15px, 0px, 0px);
+        color: $silver !important;
+        @include font-size(14px);
+        min-width: 100%;
+    }
+
+    ::placeholder {
+        color: $silver;
+
+    }
+
+    .uinput {
+        color: $silver;
+    }
+
+    .ufactors {
+        @include border-radius(20px, 20px, 20px, 20px);
+        height: 30px;
+        background-color: $red;
+        @include padding(0px, 15px, 0px, 15px);
+        color: $white;
+        @include font-size(14px);
+        @include margin(7px, 0, 0, 0px);
+        float: left;
+        text-align: left;
+
+        .us1 {
+            float: right;
+            margin-top: -10px;
+        }
+
+
+        .us2 {
+            float: left;
+            margin-top: -10px;
+        }
+    }
+
+
+
+    .umenu {
+        margin-top: -10px;
+        color: $silver !important;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(0px, 0px, 0px, 26px);
+                text-align: center;
+                color: $black !important;
+            }
+
+            li:first-child {
+                border-left: 2px solid #8C8C8C;
+                margin-left: 15px;
+            }
+        }
+
+
+    }
+
+
+    .uconsult {
+        @include margin(0px, 0px, 0px, 0px);
+        @include font-size(16px);
+
+        a {
+            color: $red;
+            text-decoration: none;
+            @include font-size(26px);
+
+        }
+
+    }
+
+
+}
+
+
+//-------------------------- additional Styles----------------------------------
+
+
+.ft-logo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.ft-logo p {
+    font-family: bakhtiari !important;
+    text-align: justify;
+}
+
+
+
+
+.ft-txt {
+    direction: rtl;
+
+
+
+}
+
+.ft-txt label {
+    font-family: iransansBold !important;
+}
+
+.ft-txt p {
+    font-family: bakhtiari !important;
+    text-align: justify;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+
+
+.btn-reg {
+    background-color: #016670;
+    padding: 3px 12px 1px 12px;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: iransansBold !important;
+    margin-right: 5px;
+}
+
+input {
+    // background: #E6E5E5 !important;
+    // border: none !important;
+    border-radius: 20px !important;
+    padding-right: 10px;
+    font-family: bakhtiari !important;
+}
+
+// input:disabled {
+//     background-color: #c7c6c6 !important;
+// }
+
+textarea {
+    background-color: #F2F2F2 !important;
+
+}
+
+.sub-logo {
+    color: #8C8C8C;
+    font-family: iransansBold;
+}
+
+.mdi-playlist-check {
+    font-size: 80px !important;
+    color: #016670 !important;
+
+
+}
+
+.con-footer {
+    width: 80%;
+
+
+    line-height: 30px;
+    margin: 0px auto;
+    font-family: iransansBold !important;
+
+}
+
+.lbl-f-title {
+    font-family: iransansBold !important;
+    color: #016670 !important;
+    font-size: 16px !important;
+}
+
+.fnt-fat {
+    font-family: bakhtiari !important;
+}
+
+
+
+.main-footer {
+    box-shadow: 0 0 50px #01667029;
+    background-color: #FFF;
+    margin: 0px auto !important;
+    min-width: 100%;
+    border-top: 1px solid #8C8C8C;
+
+}
+
+
+
+
+.sp-green {
+    color: #016670;
+    font-size: 50px;
+    font-family: bakhtiari;
+}
+
+.sp-red {
+    color: #930148;
+    font-size: 50px;
+    font-family: bakhtiari;
+}
+
+.sp-small {
+    color: #8C8C8C;
+    font-size: 14px;
+
+}
+
+.title {
+    color: #016670;
+    font-family: iransansBold !important;
+    font-size: 16px;
+}
+
+
+.my-line-silver {
+    height: 0.5px;
+    color: silver;
+    background-color: silver;
+}
+
+
+.my-line-silver-90 {
+    height: 0.5px;
+    color: silver;
+    background-color: silver;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.ttl {
+    color: #016670;
+    font-family: bakhtiari !important;
+    font-size: 16px;
+}
+
+.logo-part {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+// ***************************************** MAIN NEW LAYOUT ****************************************//
+
+
+
+
+.br-buttom {
+    border-bottom: solid 1px #F2F2F2;
+}
+
+.my-dialog-table {
+    margin: 0 auto;
+    text-align: center;
+    font-family: bakhtiari;
+    font-size: 14px;
+}
+
+.my-dialog-table table {
+    border-spacing: 10px !important;
+
+
+}
+
+
+
+.my-dialog-table th,
+td {
+
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.space-transparent {
+    background: transparent;
+    padding: 5px 0 5px 0;
+}
+
+.my-popup-title {
+    font-family: bakhtiari;
+    font-size: 16px;
+    font-weight: bold;
+    color: #016670;
+}
+
+
+.my-calculate {
+
+    border: solid 1px #F2F2F2;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px auto;
+    font-family: bakhtiari;
+    text-align: center;
+
+
+}
+
+.my-fn-bold {
+    font-weight: bold;
+}
+
+.sp-green {
+    color: #016670;
+    font-family: bakhtiari;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+.con-dialog-price-list {
+    font-family: bakhtiari;
+    padding: 10px;
+}
+
+.tablet-main {
+    background: #FFF;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: bakhtiari;
+    box-shadow: 0 0 30px #e6e5e5;
+    color: #8C8C8C;
+}
+
+
+
+
+.mdi-comment-edit-outline {
+    color: #016670 !important;
+    font-size: 70px !important;
+
+
+}
+
+
+
+.my-empty-state {
+    background: transparent;
+    border: solid 1px #E6E5E5;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+    color: #8C8C8C;
+    font-family: bakhtiari !important;
+    font-size: 14px;
+}
+
+.my-empty-state ul {
+    list-style-type: none;
+}
+
+
+.my-empty-state ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+.see-other-products {
+    color: $green;
+    font-family: bakhtiari !important;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.details-pay {
+    color: #000;
+    font-family: bakhtiari !important;
+    text-align: center;
+    font-size: 12px;
+    color: #8C8C8C;
+    line-height: 25px;
+
+}
+
+
+.details-pay-tablet {
+    color: #000;
+    font-family: bakhtiari !important;
+    text-align: center;
+    font-size: 12px;
+    color: #8C8C8C;
+    line-height: 25px;
+
+}
+
+
+.my-btn-whitee {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 8px, 10px, 80px, 10px;
+    font-family: bakhtiari !important;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    padding: 2px 12px 2px 12px;
+    max-width: 200px;
+    text-align: center;
+
+}
+
+
+.red-attention-block {
+    background: #930148;
+    padding: 10px;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 12px;
+
+}
+
+
+.mdi-backburger,
+.mdi-delete {
+    font-size: 12px !important;
+}
+
+.v-input--checkbox .v-label {
+    // font-size: 12px;
+    font-family: bakhtiari !important;
+}
+
+
+.new-main {
+    max-width: 1440px !important;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    font-family: bakhtiari;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    background-color: #f2f2f2 !important;
+}
+
+.all-main {
+    background-color: #f2f2f2 !important;
+    padding-bottom: 60px !important;
+    min-width: 1100px;
+}
+
+@media (max-width:1140px) and (min-width:961px) {
+    .all-main {
+        min-width: 97% !important;
+    }
+}
+
+@media (max-width:960px) and (min-width:601px) {
+    .all-main {
+        min-width: 90% !important;
+    }
+}
+@media  (max-width:600px) {
+    .all-main{
+        min-width: 100% !important;
+    }
+}
+
+.my-lbl-title-16 {
+    font-family: boldbakhtiari !important;
+    font-weight: bold;
+    font-size: 16px !important;
+    color: #212121;
+}
+
+.my-lbl-title-14 {
+    font-family: bakhtiari;
+    font-weight: bold;
+    font-size: 14px !important;
+    color: $green;
+}
+
+.my-lbl-title-12 {
+    font-family: bakhtiari;
+    font-weight: bold;
+    font-size: 12px !important;
+    color: #212121;
+}
+
+
+
+.my-fn-10 {
+    font-family: bakhtiari;
+    font-size: 10px;
+}
+
+.my-fn-12 {
+    font-family: bakhtiari;
+    font-size: 12px;
+}
+
+.my-fn-14 {
+    font-family: bakhtiari;
+    font-size: 14px;
+}
+
+.my-fn-16 {
+    font-family: bakhtiari;
+    font-size: 16px;
+}
+
+.right-content {
+    background: #FFF;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: bakhtiari;
+    box-shadow: 0 0 30px #e6e5e5;
+}
+
+.my-final-price {
+    // border: solid 1px #F2F2F2;
+    // border-radius: 20px;
+    padding: 10px;
+    font-family: bakhtiari;
+    font-weight: bold;
+    color: #212121;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.lbl-number-price {
+    color: #016670;
+    font-size: 16px;
+}
+
+.left-content {
+    border-radius: 20px;
+    font-family: bakhtiari;
+}
+
+.my-left-content {
+    // padding: 15px 10px 10px 10px;
+    font-family: bakhtiari;
+    color: #8C8C8C;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #e6e5e5;
+}
+
+.my-left-content img {
+    border-radius: 10px;
+}
+
+.my-order-levels {
+    margin: -110px auto;
+    text-align: center;
+}
+
+.mdi-arrow-left {
+    font-size: 14px;
+}
+
+.my-title-12 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.my-order-levels ul {
+    list-style-type: none;
+}
+
+.my-order-levels ul li {
+    display: inline-block;
+    padding: 10px 15px 0px 0px;
+    font-family: bakhtiari;
+}
+
+.my-user-attention {
+    border: solid 1px #E6E5E5;
+    border-radius: 20px;
+    padding: 20px;
+    color: #8C8C8C;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: bakhtiari;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.my-red {
+    color: #930148;
+}
+
+.my-green {
+    color: #016670;
+}
+
+.my-main-tab {
+    color: #016670;
+    font-family: bakhtiari;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+
+.number-basket {
+    border-radius: 100%;
+    text-align: center;
+    color: #FFF;
+    background-color: #016670;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.my-main-line-silver {
+    color: #8C8C8C;
+    background-color: #8C8C8C;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0.5px;
+}
+
+
+.my-btn-green {
+    background: #016670;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: bakhtiari;
+    cursor: pointer;
+}
+
+.my-btn-silver {
+    background: #E6E5E5;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: bakhtiari;
+    cursor: pointer;
+}
+
+
+.my-btn-green-tablet {
+    background: #016670;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    font-family: bakhtiari;
+    cursor: pointer;
+}
+
+
+.my-btn-silver-tablet {
+    background: #E6E5E5;
+    color: #8C8C8C;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    font-family: bakhtiari;
+    cursor: pointer;
+}
+
+
+
+.my-white-box {
+    min-width: 100%;
+    padding: 20px 20px 0px 20px;
+    font-family: bakhtiari;
+    border-radius: 20px;
+    font-size: 14px;
+    background: #FFFFFF;
+    color: #212121 !important;
+    box-shadow: 0 0 30px #e6e5e5;
+    line-height: 25px;
+}
+
+select {
+    border-radius: 20px;
+    outline: none;
+    height: 30px;
+    padding: 0 5px 0 0;
+    border: solid 1px #F2F2F2;
+    background: url(/img/arrow-down.png) no-repeat right #FFFFFF;
+    -webkit-appearance: none;
+    background-position-x: 10px;
+    font-family: bakhtiari !important;
+    font-size: 12px !important;
+    color: #212121;
+
+}
+
+.logopic {
+    width: 90%;
+    margin-top: 40px;
+}
+
+.titles {
+    font-family: boldbakhtiari !important;
+    font-size: 23px;
+    color: #016670;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.contextpic {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contextbox h3 {
+    font-family: boldbakhtiari !important;
+    color: #016670;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: initial;
+    letter-spacing: -0.2px;
+}
+
+.contextbox p {
+    font-family: bakhtiari !important;
+    font-size: 14px;
+    font-weight: 400 !important;
+    letter-spacing: -0.2px;
+}
+
+.prodpageclass {
+    padding: 15px;
+    margin-top: 20px;
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    label {
+        font-size: 14px;
+        color: #212121;
+    }
+}

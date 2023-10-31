@@ -1,0 +1,104 @@
+@import "../../style.scss";
+
+.option_values_table {
+  padding-top: 30px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  .v-data-table__wrapper {
+    overflow: inherit !important;
+  }
+
+  background-color: #dae8ea !important;
+  thead {
+    border-bottom: 2px solid $silver !important;
+
+    tr {
+      th {
+        text-align: center !important;
+        vertical-align: inherit;
+        padding: 5px 5px !important;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        text-align: center;
+        color: $silver;
+      }
+      .option_value_table_header_count { 
+        width: 75px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $silver;
+      td {
+        text-align: center;
+        padding: 20px 3px;
+
+        .option_value_table_btn {
+          button {
+            padding: 5px 10px;
+            color: white;
+            font-size: 0.7rem;
+          }
+        }
+        .option_value_table_select {
+          .mx_Select {
+            margin-top: 0 !important;
+          }
+          .selectLable { 
+            display: none !important;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+// .option_values_table {
+//   width: 100% !important;
+//   background-color: #dae8ea;
+//   display: block;
+//   padding-top: 15px;
+//   thead {
+//     tr {
+//         background-color: red;
+//       border-bottom: 1px solid $silver;
+//       th {
+//         width: 100%;
+//         background-color: yellow;
+//         padding: 5px 7px;
+//         white-space: nowrap;
+//         font-size: 0.8rem;
+//         text-align: center;
+//         color: $silver;
+//       }
+//     }
+//   }
+//   tbody {
+//     tr {
+//       border-bottom: 1px solid $silver;
+//       td {
+
+//         text-align: center;
+//         padding: 10px 3px;
+
+//         .option_value_table_btn {
+//           button {
+//             padding: 5px 10px;
+//             color: white;
+//             font-size: 0.7rem;
+//           }
+//         }
+//         .option_value_table_select {
+//           .mx_Select {
+//             margin-top: 0px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

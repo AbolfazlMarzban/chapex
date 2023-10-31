@@ -1,0 +1,75 @@
+@import "../../colors.scss";
+
+
+.goods_dialogs_main {
+  border-radius: 20px;
+}
+
+.goods_dialog {
+  font-family: bakhtiari !important;
+  // text-align: center;
+
+  .goods_dialog_title {
+    font-size: 20px;
+    font-family: boldbakhtiari !important;
+    color: $green;
+  }
+
+  hr {
+    background-color: $green;
+    width: 80%;
+    margin: 10px auto;
+    border: 0.5px solid $green;
+  }
+
+  .goods_dialog_text {
+    padding: 15px;
+
+    p {
+      font-family: bakhtiari !important;
+    }
+  }
+
+  .goods_dialog_text-data {
+    font-family: iransansBold !important;
+  }
+
+  .goods_dialog_btn {
+    font-size: 15px;
+    letter-spacing: normal;
+    color: $white;
+    background-color: $green;
+    border-radius: 30px;
+    padding: 0px 31px !important;
+    height: 30px !important;
+
+  }
+
+  .goods_dialog_comment {
+    width: 80%;
+    margin: auto;
+
+    .goods_dialog_stock_label {
+      color: $red;
+      font-family: iransansBold !important;
+
+    }
+
+    .stock_hr {
+      border: 0.1px solid #d6d4d4;
+    }
+  }
+
+  .goods_dialog_align_right {
+    text-align: right;
+
+  }
+
+  .goods_dialog_align_left {
+    text-align: left;
+
+    label {
+      font-size: 13px;
+    }
+  }
+}

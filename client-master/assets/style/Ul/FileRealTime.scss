@@ -1,0 +1,189 @@
+@import "../../style.scss";
+@import "../../colors.scss";
+.FileInput {
+  display: none;
+}
+.imageFileInput {
+  filter: blur(1px);
+}
+.FileRealTimeBtnGroup {
+  // background: $green;
+  height: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top-left-radius: 0px;
+
+  .fileRealTimeTitle {
+    margin-right: 0px;
+    background: $green;
+    border-top-left-radius: 0px;
+    // margin-bottom: 8px;
+    // box-shadow: -1px 1px 3px -1px #000;
+    p {
+      text-align: right;
+      margin-right: 15px;
+      font-size: 0.7em;
+      margin-bottom: 6px;
+      padding: 5px 15px;
+      color: white;
+    }
+  }
+  .real_time_disable {
+    background-color: $silver;
+    cursor: not-allowed;
+  }
+  .FileRealTimebtn {
+    margin-top: 0px;
+    margin-right: 0px;
+    .FileLable {
+      cursor: pointer;
+      width: 100px;
+      height: 60px;
+      // background-color: $green;
+      padding: 5px;
+      font-size: 16pt;
+      border-radius: 0px;
+      // box-shadow: -1px 1px 3px -1px #000;
+      position: absolute;
+      top: 24px;
+      right: 12px;
+      z-index: 5;
+
+      button, i  {
+        color: $silver;
+        font-size: 1.8rem !important;
+        top: 5px ;
+        right: 6px; 
+      }
+    }
+    .File_Label_Disable {
+      cursor: not-allowed !important;
+      background-color: transparent !important;
+
+      i {
+        color: $black !important;
+      }
+      button { 
+        cursor: not-allowed !important;
+      }
+    }
+  }
+  .fileRealTimebtn2 {
+    .FileLableDelete {
+      cursor: pointer;
+      width: 100px;
+      height: 60px;
+      background-color: $green;
+      padding: 5px 15px;
+      font-size: 12pt;
+      border-radius: 0px;
+      border-bottom-left-radius: 16px;
+      border-right: 1px solid $white;
+      // box-shadow: -1px 1px 3px -1px #000;
+
+      i {
+        color: white;
+      }
+    }
+  }
+}
+.previewFileImage {
+  position: relative;
+  display: flex;
+  img {
+    width: 75px;
+    height: 70px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .FileRealTimeImage {
+    z-index: 3;
+  }
+  .ImageOverlay {
+    background-color: #80808054;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    position: absolute;
+    top: 12px;
+    z-index: 100000000000000;
+    opacity: 0;
+    transition: all 500ms;
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      width: 100%;
+      padding: 25px;
+    }
+  }
+}
+
+.loader {
+  opacity: 0;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  svg {
+    transform: scale(1.7);
+    margin-top: 24px;
+  }
+}
+.loading {
+  opacity: 1 !important;
+}
+
+/*
+    Set the color of the icon
+  */
+.fileRealTimeSvg path,
+.fileRealTimeSvg rect {
+  fill: $green;
+}
+.FileRealTimeTick {
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.9rem;
+  animation: fadeMe 500ms;
+  box-shadow: none !important;
+}
+
+.FileRealTimeClose {
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.9rem;
+  animation: fadeMe 500ms;
+  box-shadow: none !important;
+}
+
+@keyframes fadeMe {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.file_real_time_label {
+  padding: 0px 5px; 
+  margin-bottom: -10px;
+   span {
+    color: $green;
+  }
+}

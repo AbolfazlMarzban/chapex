@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import "./partials/reset.scss";
+@import "./partials/colors";
+@import "./partials/inputs";
+@import './colors.scss';
+
+@font-face {
+    font-family: 'bakhtiari';
+    src: url('/fonts/YekanBakh/Web/YekanBakh-Regular.ttf') format('truetype'),
+         url('/fonts/YekanBakh/Web/YekanBakh-Regular.woff') format('woff'),
+         url('/fonts/YekanBakh/Web/YekanBakh-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'boldbakhtiari';
+    src: url('/fonts/YekanBakh/Web/YekanBakh-Bold.ttf') format('truetype'),
+         url('/fonts/YekanBakh/Web/YekanBakh-Bold.woff') format('woff'),
+         url('/fonts/YekanBakh/Web/YekanBakh-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'heavybakhtiari';
+    src: url('/fonts/YekanBakh/Web/YekanBakh-Fat.ttf') format('truetype'),
+         url('/fonts/YekanBakh/Web/YekanBakh-Fat.woff') format('woff'),
+         url('/fonts/YekanBakh/Web/YekanBakh-Fat.woff2') format('woff2');
+}
+

@@ -1,0 +1,276 @@
+@import "./../../colors.scss";
+
+.form_builder_header {
+  background-color: $white;
+  padding-top: 18px;
+  margin-top: 0px;
+  margin-bottom: 25px !important;
+  border-radius: 20px;
+  margin-right: 0px;
+}
+
+.dragArea {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .draggable_fields_list {
+    border-radius: 20px;
+  }
+}
+
+.draggable_fields_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  background-color: $green;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  p {
+    font-family: bakhtiari !important;
+    color: $green;
+    border-bottom: 1px solid $gray-light2;
+    font-size: 16px;
+    padding-right: 5px;
+  }
+
+  .draggable_fields_list_item {
+    margin: 0px, auto, auto, auto;
+    background-color: #fff !important;
+    padding: 10px, 10px, 10px, 10px;
+    border-radius: 20px;
+    color: #016670;
+    // box-shadow: 10px 10px 50px #e8f1f2 !important;
+    font-family: bakhtiari !important;
+    font-size: 14px !important;
+    cursor: move;
+    line-height: 20px;
+
+    button {
+      background-color: transparent !important;
+      text-align: center;
+      padding: 7px;
+      color: $green !important;
+      font-family: bakhtiari;
+    }
+
+    span {
+      font-family: 'bakhtiari' !important;
+      letter-spacing: normal;
+    }
+  }
+
+  .draggable_fields_list_item_reverse {
+    margin: 0px, auto, auto, auto;
+    background-color: #016670 !important;
+    padding: 10px, 10px, 10px, 10px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+
+    // box-shadow: 10px 10px 50px #e8f1f2 !important;
+    font-family: bakhtiari !important;
+    font-size: 14px !important;
+    cursor: move;
+    line-height: 20px;
+
+    button {
+
+      background-color: transparent !important;
+      text-align: center;
+      padding: 7px;
+      color: $green !important;
+      font-family: bakhtiari;
+    }
+
+    span {
+      font-family: 'bakhtiari' !important;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.draggable_background {
+  background-color: $green;
+  border-left: 1px solid $gray-light1;
+  border-right: 1px solid $gray-light1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  p {
+    font-family: bakhtiari !important;
+    color: $green;
+    // border-bottom: 1px solid $gray-light2;
+  }
+
+  .list-group-item {
+    min-height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .list-group-item:hover {
+    background-color: rgb(255, 248, 240);
+  }
+
+  .list-group-item-selected {
+    background-color: $green-light2;
+    border-radius: 10px;
+  }
+}
+
+.draggable_field_step {
+  font-size: 1rem;
+  font-weight: bold;
+  color: $green;
+  margin: 5px 0px 5px 0px !important;
+}
+
+.draggable_list_div {
+  position: relative;
+  padding-top: 12px !important;
+}
+
+.draggable_field_edit_icon {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 10px;
+
+  i {
+    margin-top: 8px;
+    font-size: 1rem !important;
+  }
+
+  &:hover {
+    i {
+      color: $green;
+    }
+  }
+}
+
+.draggable_field_delete_icon {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 30px;
+
+  i {
+    margin-top: 8px;
+    font-size: 1rem !important;
+  }
+
+  &:hover {
+    i {
+      color: $red;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .draggable_fields_setting {
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+  }
+}
+
+.draggable_fields_setting {
+  background-color: $white !important;
+  border-top-left-radius: 20px;
+}
+
+.draggable_input_setting_header_title {
+  p {
+    font-family: bakhtiari !important;
+    color: $green;
+    border-bottom: 1px solid $gray-light2;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+}
+
+.draggable_input_setting_header_close_icon {
+  button {
+    color: $red !important;
+    font-size: 0.8rem !important;
+    float: left;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+}
+
+.inputs_settings_cancel_btn {
+  margin: 0 auto auto auto;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px #e8f1f2;
+  cursor: pointer;
+  line-height: 20px;
+  background-color: $white !important;
+
+  span {
+    font-family: bakhtiari !important;
+    font-size: 14px !important;
+    letter-spacing: 0;
+    color: $green !important;
+  }
+}
+
+.inputs_settings_submit_btn {
+  margin: 0 auto auto auto;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px #e8f1f2;
+  cursor: pointer;
+  line-height: 20px;
+  background-color: $green !important;
+
+  span {
+    color: #fff;
+    font-family: bakhtiari !important;
+    font-size: 14px !important;
+    letter-spacing: 0;
+  }
+}
+
+.nfb-buttonlist {
+  background: $white;
+  border-radius: 20px;
+
+  button {
+    background-color: transparent;
+    color: #016670;
+    box-shadow: 10px 10px 50px #e8f1f2;
+    font-size: 14px;
+  }
+}
+
+.nfb-formlist {
+  background: $white;
+  border-radius: 20px;
+}
+
+.checkboxx {
+  label {
+    font-size: 16px !important;
+    padding-right: 10px;
+  }
+}
+
+.v-select-fbuilder {
+  label {
+    position: absolute;
+    top: -20px !important;
+    font-size: 16px;
+  }
+}
+
+.datepicker-fbuilder {
+  label {
+    border-radius: 10px 0px 0px 10px !important;
+  }
+}

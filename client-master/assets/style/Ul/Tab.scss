@@ -1,0 +1,92 @@
+@import "../../colors.scss";
+
+.tabs-group{
+    font-size: 14px !important; 
+    font-weight: bolder;
+    background-color: #fff;
+    border-bottom: 2px solid #ececec;
+
+}
+
+.tabs-item{
+    padding: 23px 23px 15px 23px;
+    background-color: #fff;
+}
+.tabs-item.active{
+    border-bottom: 3px solid #016670;
+    span {
+        color: #016670;
+    }
+    
+}
+
+.m-tabs-0{
+    margin:  0 0 !important;
+}
+
+.tabs-item-text {
+    font-size: 14px !important;
+    vertical-align: super;
+    color: #8c8c8c;
+}
+
+.tabs-record{
+    background-color: #fff;
+    margin: 2px 0 !important;
+    padding: 17px !important;
+    span{
+        color: #8c8c8c;
+        font-size: 14px !important;
+        vertical-align: sub;
+    }
+}
+
+.tabs-wrapper-flex{
+    display: flex !important;
+}
+
+.bg-color-white{
+    background-color: #ffffff !important;
+}
+.btn-order {
+    margin: 0px auto;
+    border-radius: 15px;
+    padding: 5px 24px 5px 26px;
+    font-size: 18px;
+    border: 0;
+    text-align: center;
+    background-color: $green;
+    color: $white !important;
+    cursor: pointer;
+
+}
+
+
+.fns-12 {
+    font-size: 12px !important;
+}
+
+.margin-label{
+    margin: 0 0 6px 6px !important;
+}
+
+.w-100{
+    width: 100% !important;
+}
+
+.w-84{
+    width: 84% !important;
+}
+
+@media screen and (max-width : 1280px){
+    .width-span-label{
+        width: 100% !important;
+    }
+}
+
+
+@media screen and (max-width : 1280px){
+    .width-select{
+        width: 100% !important;
+    }
+}

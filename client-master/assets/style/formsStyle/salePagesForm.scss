@@ -1,0 +1,79 @@
+@import "../../colors.scss";
+
+.features_form_container body,
+.features_form_container label,
+.features_form_tabs .v-tab {
+  font-family: bakhtiari !important;
+  border-radius: 0px;
+  font-size: 16px !important;
+  letter-spacing: 0;
+  color: $gray-light !important;
+
+
+}
+
+.features_form_tabs {
+  margin-right: 0.5rem;
+
+  .v-tab--active,
+  .form_product_subject {
+    color: $green !important;
+  }
+
+  .v-tab {
+    &:before {
+      display: none;
+    }
+
+    font-size: 16px !important;
+    color: $gray-light;
+    letter-spacing: 0 !important;
+  }
+
+  .v-tabs-slider-wrapper {
+    height: 3px !important;
+
+    .v-tabs-slider {
+      background-color: $green;
+      height: 100%;
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
+
+.features_form_tabs .v-tabs-slider-wrapper .v-tabs-slider {
+  background-color: #016670;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+
+.features_form_container hr {
+  margin-top: 0 !important;
+  background-color: #F2F2F2 !important;
+
+}
+
+.features_form_final-btn {
+  .btn-green {
+    min-width: 70% !important;
+    padding: 10px 20px 10px 20px !important;
+    letter-spacing: 0.06rem;
+  }
+
+  color: $white !important;
+  margin-top: 1.2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.0892857143em;
+}
+
+.features_form_attention {
+  color: #930148;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.v-simple-checkbox {
+  text-align: initial;
+}

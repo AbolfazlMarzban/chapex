@@ -1,0 +1,24 @@
+
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+@mixin font-weight($fweight) {
+    font-weight: $fweight;
+}
+
+@mixin line-height($lheigh) {
+    line-height: $lheigh;
+}
+
+@mixin border-radius($top, $right, $bottom, $left) {
+    border-radius: $top $right $bottom $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}

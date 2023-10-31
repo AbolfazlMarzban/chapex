@@ -1,0 +1,63 @@
+.mt30{
+    margin-top: 50px;
+    .bottom-line{
+        border-bottom: 1px solid #8c8c8c;
+    }
+}
+
+.title {
+    font-family: iransansBold !important;
+    color: #016670;
+    font-size: 20px !important;
+    font-weight: bold  !important;
+    margin-bottom: 0 !important;
+}
+
+.status {
+    direction: rtl;
+    text-align: center;
+    min-width: 100%;
+  }
+ 
+   .status .hide-content {
+    border: solid 1px #E6E5E5;
+    padding: 50px 10px 50px 10px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    min-width: 100%;
+  }
+   .status .sbox {
+    font-family: bakhtiari !important;
+    font-size: 16px;
+    font-weight: bold !important;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(140, 140, 140, 0.2);
+    // box-shadow: 10px 10px 50px #E8F1F2;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .status .sbox:hover{
+    transform: translateY(-3px);
+    transition: 0.5s;
+  }
+  .activeBox{
+      color: #fff !important;
+      background-color: #016670 !important;
+      .v-icon {
+          color: #fff !important;
+      }
+  }
+   .status .sbox .v-icon {
+    color: #016670;
+    padding-left: 10px;
+  }
+   .cur-pointer {
+    cursor: pointer;
+  }
+   .my-line-silver {
+    height: 0.5px;
+    color: #8C8C8C;
+    background-color: #8C8C8C;
+  }

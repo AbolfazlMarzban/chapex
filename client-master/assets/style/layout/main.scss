@@ -1,0 +1,352 @@
+@charset "UTF-8";
+@import "../../mainmixin/colors";
+@import "../../mainmixin/mixin";
+@import '../../mainmixin/inputs';
+@import '../../mainmixin/widths';
+@import '../../mainmixin/mrg';
+@import '../../mainmixin/fnsize';
+@import '../../mainmixin/brdr';
+
+
+
+
+.utop-part {
+    background-color: $white;
+    @include margin(0px, auto, auto, auto);
+    @include line-height(50px);
+    font-family: bakhtiari !important;
+    background-image: url(../../mainLayoutImg/index.jpg);
+    background-position: center;
+    font-family: bakhtiari !important;
+    @include padding(10px, 20px, 0px, 20px);
+    height: 250px;
+
+    //start mobile-menu
+    .mobile-menu {
+        color: $silver;
+        line-height: 0px;
+        @include font-size(16px);
+        font-family: bakhtiari !important;
+        background-color: $white;
+
+
+
+        .mrg-minus-top-15 {
+            margin-top: -15px;
+        }
+
+
+
+        .logo {
+            color: $green;
+            font-family: bakhtiari !important;
+            font-size: 20px !important;
+
+        }
+
+        .mdi-account {
+            color: $silver !important;
+        }
+
+        .hr-line {
+            min-width: 100%;
+            color: $mid-silver;
+            background-color: $mid-silver;
+            height: 0.5px;
+        }
+
+        .m-srch {
+            @include border-radius(20px, 20px, 20px, 20px);
+            text-align: right;
+            height: 30px;
+            background-color: $light_silver;
+            @include padding(10px, 15px, 5px, 0px);
+            color: $silver;
+            background-color: $white;
+            border: solid 1px $light-silver;
+            @include font-size(14px);
+            min-width: 100%;
+
+        }
+
+
+        .mobile-content {
+            background-color: $white;
+            line-height: 30px;
+            position: relative;
+            z-index: 9999;
+            @include padding(0px, 15px, 5x, 20px);
+
+            .v-icon {
+                @include font-size(20px);
+            }
+
+
+
+            ul {
+                list-style-type: none;
+            }
+
+            ul li {
+                display: inline-block;
+
+
+            }
+
+
+
+        }
+    }
+
+    //end mobile-menu
+
+
+    .mdi-account {
+        color: $green !important;
+    }
+
+    .mdi-cart {
+        color: $white !important;
+    }
+
+    .utxtSrch {
+        @include border-radius(20px, 20px, 20px, 20px);
+        text-align: right !important;
+        float: right;
+        height: 30px;
+        background-color: $light_silver;
+        @include padding(0px, 15px, 0px, 0px);
+        color: $silver !important;
+        @include font-size(14px);
+        min-width: 100%;
+    }
+
+    ::placeholder {
+        color: $silver;
+
+    }
+
+    .uinput {
+        color: $silver;
+    }
+
+    .ufactors {
+        @include border-radius(20px, 20px, 20px, 20px);
+        height: 30px;
+        background-color: $red;
+        @include padding(0px, 15px, 0px, 15px);
+        color: $white;
+        @include font-size(14px);
+        @include margin(7px, 0, 0, 0px);
+        float: left;
+        text-align: left;
+
+        .us1 {
+            float: right;
+            margin-top: -10px;
+        }
+
+
+        .us2 {
+            float: left;
+            margin-top: -10px;
+        }
+    }
+
+
+
+    .umenu {
+        margin-top: -10px;
+        color: $silver !important;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                @include padding(0px, 0px, 0px, 26px);
+                text-align: center;
+                color: $black !important;
+            }
+
+            li:first-child {
+                border-left: 2px solid #8C8C8C;
+                margin-left: 15px;
+            }
+        }
+
+
+    }
+
+
+    .uconsult {
+        @include margin(0px, 0px, 0px, 0px);
+        @include font-size(16px);
+
+        a {
+            color: $red;
+            text-decoration: none;
+            @include font-size(26px);
+
+        }
+
+    }
+
+
+}
+
+//-------------------------- additional Styles----------------------------------
+
+
+.ft-logo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.ft-logo p {
+    font-family: bakhtiari !important;
+    text-align: justify;
+}
+
+
+
+
+.ft-txt {
+    direction: rtl;
+
+
+
+}
+
+.ft-txt label {
+    font-family: boldbakhtiari !important;
+}
+
+.ft-txt p {
+    font-family: bakhtiari !important;
+    text-align: justify;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+
+
+.btn-reg {
+    background-color: #016670;
+    padding: 3px 12px 1px 12px;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: boldbakhtiari !important;
+    margin-right: 5px;
+}
+
+input {
+    // background: #E6E5E5 !important;
+    border-radius: 20px !important;
+    padding-right: 10px;
+    font-family: bakhtiari !important;
+}
+
+.sub-logo {
+    color: #8C8C8C;
+    font-family: boldbakhtiari;
+}
+
+.mdi-playlist-check {
+    font-size: 80px !important;
+    color: #016670 !important;
+
+
+}
+
+.con-footer {
+    width: 80%;
+
+
+    line-height: 30px;
+    margin: 0px auto;
+    font-family: boldbakhtiari !important;
+
+}
+
+.lbl-f-title {
+    font-family: boldbakhtiari !important;
+    color: #016670 !important;
+    font-size: 16px !important;
+}
+
+.fnt-fat {
+    font-family: bakhtiari !important;
+}
+
+
+
+.main-footer {
+    box-shadow: 0 0 50px #01667029;
+    background-color: #FFF;
+    margin: 0px auto;
+    min-width: 100%;
+
+}
+
+
+.sp-green {
+    color: #016670;
+    font-size: 50px;
+    font-family: bakhtiari;
+}
+
+.sp-red {
+    color: #930148;
+    font-size: 50px;
+    font-family: bakhtiari;
+}
+
+.sp-small {
+    color: #8C8C8C;
+    font-size: 14px;
+
+}
+
+.title {
+    color: #016670;
+    font-family: boldbakhtiari !important;
+    font-size: 16px;
+}
+
+
+.my-line-silver {
+    height: 0.5px;
+    color: silver;
+    background-color: silver;
+}
+
+
+.my-line-silver-90 {
+    height: 0.5px;
+    color: silver;
+    background-color: silver;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.ttl {
+    color: #016670;
+    font-family: bakhtiari !important;
+    font-size: 16px;
+}
+
+.logo-part {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}

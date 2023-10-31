@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import "./colors";
+@import "./mixin";
+@import './inputs';
+@import './widths';
+@import './mrg';
+@import './fnsize';
+
+.user-opinion {
+    font-family: bakhtiari !important;
+    direction: rtl;
+    line-height: 30px;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            padding: 0 20px 0 0;
+
+        }
+    }
+
+    textarea {
+        min-width: 100%;
+        background: $light_silver;
+        @include border-radius(20px, 20px, 20px, 20px);
+        @include padding(3px, 10px, 3px, 10px);
+    }
+
+
+    .btn-order {
+        margin: 0px auto;
+        border-radius: 15px;
+        padding: 0px 10px 0px 10px;
+        font-size: 18px;
+        border: 0;
+        text-align: center;
+        background-color: $green;
+        color: $white !important;
+        cursor: pointer;
+    }
+
+    .btn-common {
+        background-color: $light_silver;
+        color: $black;
+        margin: 0px auto;
+        border-radius: 15px;
+        padding: 0px 15px 0px 15px;
+        font-size: 18px;
+        border: 0;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    .btn-close {
+        background-color: $red;
+
+        margin: 0px auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 5px;
+        font-size: 18px;
+        border: 0;
+        text-align: center;
+        cursor: pointer;
+
+        .v-icon {
+            color: $white !important;
+        }
+
+    }
+
+
+
+
+    sp-title {
+        color: #8C8C8C;
+    }
+
+    sp-text {
+        color: #000 !important;
+    }
+
+
+
+
+}

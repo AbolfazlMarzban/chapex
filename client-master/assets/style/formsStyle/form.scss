@@ -1,0 +1,204 @@
+@import "../../colors.scss";
+
+.product_form_container,
+.design_standard_container {
+  box-shadow: unset !important;
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+
+.product_form_container,
+.design_standard_container body,
+label,
+button {
+  font-family: bakhtiari !important;
+  border-radius: 0px;
+}
+
+.product_form_container hr {
+  margin-top: 0 !important;
+  background-color: #f2f2f2 !important;
+}
+
+.product_form_final-btn {
+  .btn-green {
+    min-width: 70% !important;
+    padding: 10px 20px 10px 20px !important;
+    letter-spacing: 0.06rem;
+  }
+
+  color: $white !important;
+  margin-top: 1.2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.0892857143em;
+}
+
+.product_form_tabs {
+  margin-right: 0.5rem;
+
+  .v-tab--active,
+  .form_product_subject {
+    color: $green !important;
+  }
+
+  .v-tab {
+    font-family: iransansBold !important;
+    color: $silver;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    transition: all ease-in .15s;
+
+    &:before {
+      display: none;
+    }
+
+    &:hover {
+      color: $green !important;
+    }
+
+    font-size: 16px !important;
+    color: $gray-light;
+    letter-spacing: 0 !important;
+  }
+
+  .v-tabs-slider-wrapper {
+    height: 3px !important;
+
+    .v-tabs-slider {
+      background-color: $green;
+      height: 100%;
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
+
+.product_form_items {
+  .form_product_subject {
+    color: $green !important;
+  }
+
+  .labelInput,
+  .selectLable,
+  .v-label,
+  .form__label {
+    color: $gray-light !important;
+    font-size: 16px !important;
+  }
+
+  hr {
+    overflow: visible;
+    height: 0;
+    width: 95%;
+    margin: 1.5rem auto;
+    border: 0.5px solid $gray-light1;
+    color: $gray-light1;
+    background-color: $gray-light1;
+  }
+}
+
+.goods_dialog_btn {
+  font-size: 15px;
+  letter-spacing: normal;
+  color: $white !important;
+  background-color: $green !important;
+  border-radius: 30px;
+  padding: 0px 31px !important;
+  height: 30px !important;
+}
+
+.form_product_attention {
+  margin-top: 1rem;
+  color: #930148;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.product_form_input_label {
+  .v-label {
+    padding-left: 5px !important;
+    width: 100% !important;
+  }
+}
+
+.design_standard_btns {
+  .product_form_final-btn {
+    margin-left: 1rem;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  margin: -12px;
+}
+
+.form_options_dependancy_add_btn {
+  p {
+    display: flex;
+    cursor: pointer;
+    margin-top: 22px;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 500ms;
+
+    span {
+      color: $green;
+      margin-bottom: 0px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    i {
+      color: $green !important;
+      font-size: 1rem !important;
+      font-weight: 700 !important;
+    }
+
+    &:hover {
+      background-color: $green;
+
+      span {
+        color: $white;
+      }
+
+      i {
+        color: $white !important;
+      }
+    }
+  }
+}
+
+
+// ---------------------------------------  OPTION BREADCRUMB STYLES ----------------------------------------
+
+
+.option-breadcrumb-items {
+  margin-bottom: 30px;
+
+  .option-breadcrumb-item {
+    font-size: 14px;
+    display: inline-block !important;
+    font-weight: 600;
+    color: $green;
+
+    &:first-child {
+      margin-right: 0 !important;
+
+      .arrow-icon {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.list_manage_goods_table {
+  table {
+    thead {
+      tr {
+        th {
+          width: 10px !important;
+        }
+      }
+    }
+  }
+}

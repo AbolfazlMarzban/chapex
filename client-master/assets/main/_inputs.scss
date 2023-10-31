@@ -1,0 +1,25 @@
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="pattern"]:focus,
+.uneditable-input:focus {
+    border-color: $light_silver;
+    box-shadow: 0 1px 1px $light_silver inset, 0 0 1px $light_silver;
+    outline: 0 none;
+    background-color: $light_silver;
+    
+   
+
+}

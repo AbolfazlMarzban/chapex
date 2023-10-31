@@ -1,0 +1,138 @@
+@import "../../style.scss";
+@import "../../partials/colors";
+@import "../../partials/inputs";
+@import "../main.scss";
+
+.manage-user-table {
+  border-top: 1px solid $light_silver;
+  background-color: $white;
+  @include border-radius(0px, 0px, 20px, 20px);
+  @include padding(15px, 15px, 15px, 15px);
+  color: $silver;
+  @include font-size(13px !important);
+  .manage_user_row { 
+    padding-top: 16px ;
+    .col-4 { 
+      border: 1px solid $light_silver; 
+      border-top: 0px ;
+      border-right: 0px;
+      &:last-child { 
+        border-left: 0px;
+      }
+    }
+  }
+  .first-tr {
+    color: $silver;
+    @include font-size(13px);
+  }
+  .btn-plus {
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+  }
+
+  .btn-plus:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    @include font-size(18px);
+    color: $silver;
+  }
+
+  .form-control {
+    @include border-radius(20px, 20px, 20px, 20px);
+    border: none;
+    background-color: $light_silver;
+    @include font-size(12px);
+    @include padding(6px, 10px, 6px, 10px);
+    @include font-size(12px);
+    // @include margin(5px, 0, 0, 0);
+  }
+
+  .map {
+    @include border-radius(20px, 20px, 20px, 20px);
+    min-width: 100%;
+    min-height: 432px;
+  }
+
+  .w-50 {
+    width: 50px !important;
+  }
+
+  .w-70 {
+    width: 70px !important;
+  }
+
+  .w-100 {
+    width: 100px !important;
+  }
+
+  .w-120 {
+    width: 120px !important;
+  }
+
+  .w-150 {
+    width: 150px !important;
+  }
+
+  .w-400 {
+    width: 400px !important;
+  }
+
+  .br-left {
+    border-left: solid 1px $light_silver !important;
+  }
+
+  .br-bottom {
+    border-bottom: solid 1px $light_silver !important;
+  }
+
+  .fa-eye {
+    color: $green;
+  }
+
+  .table-calculate {
+    background-color: $light_silver;
+    @include border-radius(20px, 20px, 20px, 20px);
+  }
+  table,
+  th,
+  td {
+    border: none;
+  }
+
+  table {
+    width: 100%;
+    color: $silver;
+    @include font-size(13px);
+    color: $black;
+
+    th {
+      color: $silver;
+      border: none;
+    }
+
+    tr {
+      border-bottom: solid 1px $light_silver;
+    }
+
+    .edit {
+      color: $green;
+      @include font-weight(600);
+      cursor: pointer;
+    }
+  }
+}
+
+.show_user_table_icon{
+    color : $green !important;
+}
+
+.list_manage_customer_table { 
+    border-radius: 0px 0px 20px 20px;
+}
